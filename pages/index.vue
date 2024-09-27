@@ -3,7 +3,7 @@
     <Header
       imageUrl="/images/no-bg-image.png"
       imageAlt="View of Rakaposhi from Karimabad"
-      title="Tee Travels"
+      title="Sokratis Travels"
       headerClass="header-small">
     </Header>
 
@@ -11,9 +11,9 @@
       <section class="lead-text">
         <LayoutGridContainer>
           <TextColorOnScroll tag="h3" class="item">
-            Get ready to explore the world like never before with Tee Travels.
-            Dive into our travel stories and uncover the essence of each
-            destination through unique experiences and insider tips.
+            Get ready to explore the world like never before with Sokratis
+            Travels. Dive into our travel stories and uncover the essence of
+            each destination through unique experiences and insider tips.
           </TextColorOnScroll>
         </LayoutGridContainer>
       </section>
@@ -31,11 +31,10 @@
                 Explore our curated guides, travel tips, and destination
                 highlights to begin crafting your perfect itinerary. From
                 finding the best local experiences to navigating must-see
-                landmarks, Tee Travels provides all the inspiration and
+                landmarks, Sokratis Travels provides all the inspiration and
                 information you need to plan an unforgettable journey. Start
                 your adventure today and let the world be your playground!
               </p>
-
             </template>
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
@@ -98,12 +97,12 @@
 
 <script setup>
 useHead({
-  title: "Tee Travels",
+  title: "Sokratis Travels",
   meta: [
     {
       name: "description",
       content:
-        "Tee Travels offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
+        "Sokratis Travels offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
     },
   ],
   link: [

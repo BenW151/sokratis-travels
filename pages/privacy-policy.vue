@@ -159,12 +159,12 @@
 
 <script setup>
 useHead({
-  title: "Privacy Policy | Tee Travels",
+  title: "Privacy Policy | Sokratis Travels",
   meta: [
     {
       name: "description",
       content:
-        "Your Privacy Matters: How Tee Travels Protects Your Information.",
+        "Your Privacy Matters: How Sokratis Travels Protects Your Information.",
     },
   ],
   link: [

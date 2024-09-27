@@ -20,12 +20,12 @@ const props = defineProps({
 const handleError = () => clearError({ redirect: "/" });
 
 useHead({
-  title: "Tee Travels - Error",
+  title: "Sokratis Travels - Error",
   meta: [
     {
       name: "description",
       content:
-        "Tee Travels offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
+        "Sokratis Travels offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
     },
     {
       hid: "robots",

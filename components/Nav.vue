@@ -7,10 +7,10 @@
           aria-label="Home Page"
           @click="toggleMenuIfOpen"
           class="wordmark">
-          Tee Travels
+          Sokratis Travels
           <!--<NuxtImg
             src="/branding/why-not-adventures-logo-rectangle-no-bg.svg"
-            alt="Tee Travels Logo"
+            alt="Sokratis Travels Logo"
             class="nav-logo"
             :class="{ open: isMenuOpen }"
         />--></NuxtLink

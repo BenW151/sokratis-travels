@@ -6,7 +6,7 @@
           <template #title>Terms + Conditions</template>
           <template #body>
             <p>
-              Welcome to Tee Travels! By using our website and booking our
+              Welcome to Sokratis Travels! By using our website and booking our
               tours, you agree to comply with and be bound by the following
               terms and conditions. Please review them carefully.
             </p>
@@ -22,7 +22,7 @@
 
             <p>
               <strong>"Company," "our," "us,"</strong> or
-              <strong>"we"</strong> means Tee Travels.
+              <strong>"we"</strong> means Sokratis Travels.
             </p>
             <p>
               <strong>"Contract"</strong> means the agreement between us and you
@@ -77,8 +77,8 @@
             <h4>3. Information About Us and How to Contact Us</h4>
 
             <p>
-              We are Tee Travels, a company registered in the UK. Company No.
-              15826857.
+              We are Sokratis Travels, a company registered in the UK. Company
+              No. 15826857.
             </p>
 
             <p>
@@ -166,8 +166,8 @@
             <h4>7. Passports, Visas, and Health Matters</h4>
 
             <p>
-              Tee Travels does not provide insurance, visas, or flights. It is
-              your responsibility to arrange these.
+              Sokratis Travels does not provide insurance, visas, or flights. It
+              is your responsibility to arrange these.
             </p>
 
             <p>
@@ -242,7 +242,7 @@
 
             <p>
               Any medical conditions or dietary restrictions must be disclosed
-              to Tee Travels at the time of booking.
+              to Sokratis Travels at the time of booking.
             </p>
 
             <p>
@@ -254,7 +254,7 @@
             <h4>10. Changes and Cancellations by the Operator</h4>
 
             <p>
-              Tee Travels reserves the right to make changes to the tour
+              Sokratis Travels reserves the right to make changes to the tour
               itinerary if necessary due to unforeseen circumstances.
             </p>
 
@@ -362,8 +362,8 @@
             <h4>13. Liability</h4>
 
             <p>
-              Tee Travels is not liable for any personal injury, loss, or damage
-              that may occur during the tour.
+              Sokratis Travels is not liable for any personal injury, loss, or
+              damage that may occur during the tour.
             </p>
 
             <p>
@@ -523,9 +523,9 @@
             </p>
 
             <p>
-              By booking a tour with Tee Travels, you acknowledge that you have
-              read, understood, and agree to these terms and conditions. If you
-              have any questions or concerns, please contact us at
+              By booking a tour with Sokratis Travels, you acknowledge that you
+              have read, understood, and agree to these terms and conditions. If
+              you have any questions or concerns, please contact us at
               <a
                 href="mailto:contact@whynotadventures.co.uk"
                 aria-label="email address"
@@ -542,7 +542,7 @@
 
 <script setup>
 useHead({
-  title: "Terms + Conditions | Tee Travels",
+  title: "Terms + Conditions | Sokratis Travels",
   meta: [
     {
       name: "description",

@@ -3,15 +3,16 @@ import { resolve } from "path";
 export default defineNuxtConfig({
   site: {
     url: "https://whynotadventures.co.uk/",
-    name: "Tee Travels",
+    name: "Sokratis Travels",
   },
 
   runtimeConfig: {
     public: {
       CONTACT_API_URL: process.env.CONTACT_API_URL,
       NEWSLETTER_API_URL: process.env.NEWSLETTER_API_URL,
-      NEWSLETTER_UNSUBSCRIBE_API_URL: process.env.NEWSLETTER_UNSUBSCRIBE_API_URL,
-    }
+      NEWSLETTER_UNSUBSCRIBE_API_URL:
+        process.env.NEWSLETTER_UNSUBSCRIBE_API_URL,
+    },
   },
 
   content: {
@@ -70,7 +71,7 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", appear: true },
     head: {
-      title: "Tee Travels",
+      title: "Sokratis Travels",
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
       htmlAttrs: {
@@ -83,24 +84,24 @@ export default defineNuxtConfig({
           hid: "description",
           name: "description",
           content:
-            "Tee Travels offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
+            "Sokratis Travels offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
         },
         {
           name: "keywords",
           content:
-            "Affordable Tours, Less Traveled Destinations, Hidden Gems, Budget Travel, Tee Travels, Adventure Travel, Off the Beaten Path, Unique Destinations, Travel Deals, Adventure Tours, Explore the Unseen, Travel on a Budget, Discount Travel, Eco-Friendly Travel, Sustainable Tourism, Adventure Seekers, Unexplored Places, Travel Packages, Custom Travel Plans, Travel Itineraries",
+            "Affordable Tours, Less Traveled Destinations, Hidden Gems, Budget Travel, Sokratis Travels, Adventure Travel, Off the Beaten Path, Unique Destinations, Travel Deals, Adventure Tours, Explore the Unseen, Travel on a Budget, Discount Travel, Eco-Friendly Travel, Sustainable Tourism, Adventure Seekers, Unexplored Places, Travel Packages, Custom Travel Plans, Travel Itineraries",
         },
         { name: "theme-color", content: "#f2f3f4" },
         { name: "msapplication-TileColor", content: "#da532c" },
         { name: "msapplication-config", content: "/browserconfig.xml" },
         {
           property: "og:title",
-          content: "Tee Travels | Adventure Tours",
+          content: "Sokratis Travels | Adventure Tours",
         },
         {
           property: "og:description",
           content:
-            "Tee Travels offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
+            "Sokratis Travels offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
         },
         {
           property: "og:image",
@@ -110,7 +111,7 @@ export default defineNuxtConfig({
         { name: "twitter:card", content: "summary_large_image" },
         {
           property: "og:site_name",
-          content: "Tee Travels",
+          content: "Sokratis Travels",
         },
         {
           property: "og:locale",
@@ -123,7 +124,7 @@ export default defineNuxtConfig({
           json: {
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Tee Travels",
+            name: "Sokratis Travels",
             url: "https://whynotadventures.co.uk",
             logo: "https://whynotadventures.co.uk/branding/why-not-adventures-logo-rectangle.png",
             sameAs: [
@@ -132,7 +133,7 @@ export default defineNuxtConfig({
               // Add more social media profiles here if available
             ],
             description:
-              "Tee Travels offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
+              "Sokratis Travels offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
           },
         },
         {

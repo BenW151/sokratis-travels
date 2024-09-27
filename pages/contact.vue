@@ -16,7 +16,7 @@
 
 <script setup>
 useHead({
-  title: "Contact | Tee Travels",
+  title: "Contact | Sokratis Travels",
   meta: [
     {
       name: "description",

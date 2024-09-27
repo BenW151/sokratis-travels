@@ -147,7 +147,7 @@ const pageIndexLabels = [
 ];
 
 useHead({
-  title: "Tee Travels | Destinations",
+  title: "Sokratis Travels | Destinations",
   meta: [
     {
       name: "description",

@@ -56,7 +56,7 @@
             description: 'X',
           },
         ]" />
-      <p class="wordmark">Tee Travels</p>
+      <p class="wordmark">Sokratis Travels</p>
       <div class="copyright">
         <p class="item">Copyright ©2024</p>
         <p>
