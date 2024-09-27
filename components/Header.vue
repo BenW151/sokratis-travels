@@ -119,7 +119,7 @@ header a.link::after {
 
 .index .background-image {
   top: 13vw;
-  z-index: 4;
+  z-index: 1;
 }
 
 .background-image img {
