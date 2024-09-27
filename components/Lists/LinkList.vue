@@ -57,7 +57,7 @@ const getIconComponent = (iconName) => {
 }
 
 .list-title {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .linklist li:last-child {

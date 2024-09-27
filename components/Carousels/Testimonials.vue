@@ -174,7 +174,7 @@ watch(isMobile, async (newVal, oldVal) => {
 }
 
 .coming-soon .image-nights-price {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .overlay-text {

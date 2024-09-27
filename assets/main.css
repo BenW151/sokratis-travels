@@ -51,7 +51,7 @@
 /** HTML and Body */
 body {
   font-family: var(--font-family-secondary);
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-size: var(--font-size-XS);
   margin: 0;

@@ -46,11 +46,11 @@ const props = defineProps({
 .author {
   display: flex;
   flex-direction: row;
-  align-items: center
+  align-items: center;
 }
 
 .name {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .author p {

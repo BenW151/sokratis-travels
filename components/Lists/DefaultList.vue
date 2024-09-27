@@ -9,26 +9,26 @@
 const props = defineProps({
   title: {
     type: String,
-    default: ''
+    default: "",
   },
   items: {
     type: Array,
-    default: () => []
+    default: () => [],
   },
   bullets: {
     type: Boolean,
-    default: false
-  }
+    default: false,
+  },
 });
 </script>
 
 <style scoped>
 .list-with-bullets li:not(.list-title) {
-  list-style-type: " - "; 
+  list-style-type: " - ";
   margin-left: var(--spacing-1);
 }
 
 .list-title {
-  font-weight: bold;
+  font-weight: 600;
 }
 </style>

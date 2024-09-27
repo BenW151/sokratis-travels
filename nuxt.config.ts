@@ -45,15 +45,15 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Lora: {
-        wght: [300, 400, 500, 600, 700],
-        ital: [100, 400],
+        wght: [300, 400, 600],
+        ital: [400],
       },
       "DM Sans": {
-        wght: [100, 200, 300, 400, 500, 600, 700],
-        ital: [100, 400],
+        wght: [300, 400, 600],
+        ital: [400],
       },
       "Roboto Flex": {
-        wght: [100, 300, 400, 500, 700, 900],
+        wght: [300, 400, 600],
         ital: [400],
       },
     },
