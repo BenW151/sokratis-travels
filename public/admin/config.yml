@@ -1,10 +1,10 @@
-site_url: https://tee-travels.benward.io
+site_url: https://sokratis-travels.benward.io
 search: false
 backend:
   name: github
   branch: main
-  repo: benw151/tee-travels
-  base_url: https://oauth.tee-travels.benward.io
+  repo: benw151/sokratis-travels
+  base_url: https://oauth.sokratis-travels.benward.io
 
 media_folder: public/images/uploads
 public_folder: /images/uploads

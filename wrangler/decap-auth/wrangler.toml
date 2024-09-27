@@ -1,14 +1,9 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "decap-proxy"
+name = "sokratis-travels-oauth"
 main = "src/index.ts"
 compatibility_date = "2024-04-19"
 compatibility_flags = ["nodejs_compat"]
-route = { pattern = "oauth.tee-travels.benward.io", zone_name = "benward.io" }
-
-[vars]
-GITHUB_OAUTH_ID = "Ov23lid0qm38M0ZQofFl"
-GITHUB_OAUTH_SECRET = "daecd4de44f9a37b8a38123b89af67f61e23ac40"
-
+route = { pattern = "oauth.sokratis-travels.benward.io", zone_name = "benward.io" }
 
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Docs:
