@@ -4,6 +4,7 @@
       imageUrl="/images/no-bg-image.png"
       imageAlt="View of Rakaposhi from Karimabad"
       title="Sokratis Travels"
+      subtitle="On a Mission to Meet the World"
       headerClass="header-small">
     </Header>
 

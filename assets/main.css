@@ -27,7 +27,7 @@
   --font-family-tertiary: "Roboto Flex", sans-serif;
 
   /** Font Size */
-  --font-size-XXL: 14vw;
+  --font-size-XXL: 10vw;
   --font-size-XL: 8vw;
   --font-size-L: 6vw;
   --font-size-M: 3vw;
@@ -194,7 +194,7 @@ button::after {
   bottom: 0;
   left: 0;
   background-color: var(--foreground-primary);
-  transform-origin: bottom right;
+  transform-origin: center center;
   transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1),
     background-color 0.2s linear;
 }
@@ -202,17 +202,17 @@ button::after {
 a:hover::after,
 button:hover::after {
   transform: scaleX(1);
-  transform-origin: bottom left;
+  transform-origin: center center;
 }
 
 .underline-out::after {
   transform: scaleX(1);
-  transform-origin: bottom left;
+  transform-origin: center center;
 }
 
 .underline-out:hover::after {
   transform: scaleX(0);
-  transform-origin: bottom right;
+  transform-origin: center center;
 }
 
 .underline-out-icon {
@@ -227,7 +227,7 @@ button:hover::after {
 
 .underline-out-icon:hover::after {
   transform: scaleX(0);
-  transform-origin: bottom right;
+  transform-origin: center center;
 }
 
 .lucide {

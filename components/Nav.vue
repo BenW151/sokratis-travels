@@ -196,7 +196,7 @@ nav {
 
 .nav-item.active::after {
   transform: scaleX(1);
-  transform-origin: bottom left;
+  transform-origin: center center;
 }
 
 /*.contact {

@@ -170,7 +170,7 @@ footer .container {
 
 .item.active::after {
   transform: scaleX(1);
-  transform-origin: bottom left;
+  transform-origin: center center;
 }
 
 .back-to-top::after {
