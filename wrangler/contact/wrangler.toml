@@ -1,0 +1,21 @@
+name = "sokratis-travels-contact"
+type = "javascript"
+
+account_id = "e5b027fcf398b4a8067e8c415dc299d4"
+workers_dev = true
+compatibility_date = "2024-07-23"
+node_compat = true
+
+main = "./dist/index.js"  # Path to your main script
+
+kv_namespaces = [
+  { binding = "SOKRATIS_TRAVELS_CONTACT", id = "82e6a5afda3a41448b5423e2c3057563" }
+]
+
+send_email = [
+  {type = "send_email", name = "emailSender", destination_address = "ben@benward.io"}
+]
+
+[env.production]
+route = "sokratis-travels.benward.io/*"
+zone_id = "02faaa083fe91320956b6c3021ecbd38"
