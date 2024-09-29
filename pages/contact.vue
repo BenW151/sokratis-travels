@@ -1,7 +1,7 @@
 <template>
   <div class="contact">
     <Header
-      imageUrl="/images/index-background.png"
+      imageUrl="/images/denmark-cover.png"
       imageAlt="Attabad Lake"
       headerClass="header-small">
       <template #title> Contact </template>

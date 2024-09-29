@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header
-      imageUrl="/images/index-background.png"
+      imageUrl="/images/denmark-cover.png"
       imageAlt="View of Rakaposhi from Karimabad"
       headerClass="header-small">
       <template #title> Unsubscribe </template>

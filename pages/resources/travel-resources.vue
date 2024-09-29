@@ -1,7 +1,7 @@
 <template>
   <div class="resources">
     <Header
-      imageUrl="/images/index-background.png"
+      imageUrl="/images/denmark-cover.png"
       imageAlt="TODO alt"
       headerClass="header-small">
       <template #title> Resources </template>

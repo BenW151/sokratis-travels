@@ -2,7 +2,7 @@
   <div>
     <Nav />
     <Header
-      imageUrl="/images/index-background.png"
+      imageUrl="/images/denmark-cover.png"
       imageAlt="TODO REPLACE ONCE IMAGE FINALISED"
       :title="`${error.statusCode} Error`"
       subtitle="Destination Unknown"

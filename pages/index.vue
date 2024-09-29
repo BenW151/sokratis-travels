@@ -1,7 +1,7 @@
 <template>
   <div class="index">
-    <!--imageUrl="/images/no-bg-image.png"-->
     <Header
+      imageUrl="/images/denmark-cover.png"
       imageAlt="View of Rakaposhi from Karimabad"
       headerClass="header-small">
       <template #title>

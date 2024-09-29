@@ -253,7 +253,6 @@ button:hover::after {
 h1 .underline::after {
   height: 4px;
   bottom: 8px;
-  background-color: var(--color-black);
 }
 
 .lucide {

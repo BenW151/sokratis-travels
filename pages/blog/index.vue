@@ -1,7 +1,7 @@
 <template>
   <div class="blog-pages">
     <Header
-      imageUrl="/images/index-background.png"
+      imageUrl="/images/denmark-cover.png"
       imageAlt="Laptop with code on desk"
       headerClass="header-small">
       <template #title> Recent Posts </template>

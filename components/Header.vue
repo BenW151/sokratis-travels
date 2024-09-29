@@ -104,11 +104,6 @@ header a.link::after {
   pointer-events: none;
 }
 
-.index .background-image {
-  top: 13vw;
-  z-index: 1;
-}
-
 .background-image img {
   height: 120lvh;
   width: 100%;
@@ -162,11 +157,10 @@ body.scrolled-from-top .scroll {
   grid-column: 1 / 13;
   grid-row-start: 1;
   align-self: center;
-  color: var(--color-orange);
+  color: var(--color-white);
 }
 
 .hero-text h2 {
-  color: var(--foreground-primary);
   font-family: var(--font-family-primary);
   font-weight: 600;
   font-size: var(--font-size-M);
