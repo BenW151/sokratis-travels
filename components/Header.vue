@@ -178,6 +178,10 @@ h1 {
 }
 
 .hero-text h2 {
+  color: var(--foreground-primary);
+  text-transform: uppercase;
+  font-family: var(--font-family-primary);
+  font-weight: 600;
   font-size: var(--font-size-M);
   align-self: center;
   text-align: center;

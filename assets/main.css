@@ -229,7 +229,7 @@ button:hover::after {
 
 .underline-out-icon:hover::after {
   transform: scaleX(0);
-  transform-origin: bottom left;
+  transform-origin: bottom right;
 }
 
 .underline::after {
