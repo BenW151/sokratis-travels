@@ -4,12 +4,7 @@
       class="background-color rellax"
       v-rellax
       style="
-        background: rgb(229, 207, 184);
-        background: linear-gradient(
-          0deg,
-          var(--color-pink) 0%,
-          var(--color-lilac) 100%
-        );
+        background: var(--color-cream);
       "></div>
     <div
       v-if="imageUrl"
@@ -97,11 +92,11 @@ header {
 header,
 header a,
 header a .lucide {
-  color: var(--background-primary);
+  color: var(--foreground-primary);
 }
 
 header a.link::after {
-  background-color: var(--background-primary);
+  background-color: var(--foreground-primary);
 }
 
 .container {
@@ -175,6 +170,11 @@ body.scrolled-from-top .scroll {
   grid-column: 1 / 17;
   grid-row-start: 1;
   align-self: center;
+  color: var(--color-orange);
+}
+
+h1 {
+  text-transform: uppercase;
 }
 
 .hero-text h2 {
@@ -263,7 +263,6 @@ header .item:nth-child(3) {
   .index h1 {
     font-size: 26vw;
   }
-
 }
 </style>
 

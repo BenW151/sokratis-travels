@@ -59,14 +59,14 @@ function handleClick() {
   left: 0;
   background-color: var(--foreground-primary);
   transform: scaleX(0);
-  transform-origin: center center;
+  transform-origin: bottom right;
   transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .accordion-item:hover::before {
   height: 1px;
   transform: scaleX(1);
-  transform-origin: center center;
+  transform-origin: bottom left;
   transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
 }
 

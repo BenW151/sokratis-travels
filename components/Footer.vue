@@ -128,29 +128,11 @@ footer {
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-footer::after {
-  content: "";
-  width: calc(100% - (2 * var(--spacing-5)));
-  height: 1px;
-  background-color: var(--foreground-primary);
-  border-radius: 2vw;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-}
-
 footer .container {
   color: var(--foreground-primary);
+  background: var(--color-orange);
   padding-bottom: var(--spacing-3);
   white-space: nowrap;
-  background-image: linear-gradient(
-      to bottom,
-      var(--background-primary),
-      rgba(255, 255, 255, 0)
-    ),
-    url("/images/forest.png");
   background-size: cover;
   background-position: 25% center;
 }
@@ -170,7 +152,7 @@ footer .container {
 
 .item.active::after {
   transform: scaleX(1);
-  transform-origin: center center;
+  transform-origin: bottom left;
 }
 
 .back-to-top::after {
@@ -229,16 +211,9 @@ footer .container {
   font-size: var(--font-size-XXL);
   font-family: var(--font-family-primary);
   font-weight: 600;
-  color: var(--background-primary);
+  text-transform: uppercase;
+  color: var(--foreground-primary);
   margin-bottom: 0;
-  background: linear-gradient(
-    0deg,
-    var(--color-pink) 0%,
-    var(--color-lilac) 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }
 
 @media (max-width: 767px) {
@@ -299,5 +274,12 @@ footer .container {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+}
+</style>
+
+<style>
+footer a::after,
+footer button::after {
+  background-color: var(--foreground-primary);
 }
 </style>

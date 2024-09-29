@@ -170,7 +170,6 @@ nav {
   height: fit-content;
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  background: rgba(189, 191, 215, 0.5);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px); /* For Safari */
 }
@@ -196,7 +195,7 @@ nav {
 
 .nav-item.active::after {
   transform: scaleX(1);
-  transform-origin: center center;
+  transform-origin: bottom left;
 }
 
 /*.contact {
@@ -210,7 +209,7 @@ nav {
 }
 
 .contact:hover {
-  background: var(--color-lilac);
+  background: var(--color-orange);
   color: var(--background-primary);
   border: 1px solid var(--background-primary);
 }
@@ -221,13 +220,13 @@ nav {
 
 a {
   margin: 0 var(--spacing-3);
-  color: var(--background-primary);
+  color: var(--foreground-primary);
   pointer-events: all;
   height: fit-content;
 }
 
 a::after {
-  background-color: var(--background-primary);
+  background-color: var(--color-orange);
 }
 
 .logo-container {
@@ -237,6 +236,8 @@ a::after {
 .wordmark {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-S);
+  font-weight: 600;
+  text-transform: uppercase;
   margin-bottom: 0.5vw;
   margin-top: 0.5vw;
   margin-left: 0;

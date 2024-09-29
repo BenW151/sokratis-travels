@@ -79,7 +79,7 @@ onUnmounted(() => {
   display: flex;
   flex-direction: row;
   margin-bottom: 0;
-  color: var(--background-primary);
+  color: var(--foreground-primary);
   align-items: center;
   margin-right: 0;
 }
@@ -117,12 +117,12 @@ body.scrolled-past-header .dropdown-open {
 <style>
 .dropdown-content a.link,
 nav .lucide {
-  color: var(--background-primary);
+  color: var(--foreground-primary);
   transition: transform 0.1s;
 }
 
 .dropdown-content a.link::after {
-  background-color: var(--background-primary);
+  background-color: var(--color-orange);
 }
 
 body.scrolled-past-header .dropdown-content a.link,

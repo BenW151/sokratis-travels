@@ -134,17 +134,17 @@ input {
   border: none;
   outline: none;
   border-radius: 0;
-  color: var(--background-primary);
+  color: var(--foreground-primary);
   background-color: transparent;
   position: relative;
   width: 100%;
-  font-family: var(--font-family-secondary);
+  font-family: var(--font-family-tertiary);
   font-size: var(--font-size-XS);
 }
 
 input::placeholder {
-  color: var(--background-primary);
-  font-family: var(--font-family-secondary);
+  color: var(--foreground-primary);
+  font-family: var(--font-family-tertiary);
   font-size: var(--font-size-XS);
 }
 
@@ -183,11 +183,11 @@ body.scrolled-past-header input::placeholder {
 
 <style>
 .search .list a {
-  color: var(--background-primary);
+  color: var(--foreground-primary);
 }
 
 .search .list a::after {
-  background-color: var(--background-primary);
+  background-color: var(--foreground-primary);
 }
 
 body.scrolled-past-header .search .list a {
