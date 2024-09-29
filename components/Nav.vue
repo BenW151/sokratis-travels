@@ -165,13 +165,15 @@ nav {
   display: flex;
   align-items: center;
   top: 0;
-  width: 100%;
-  /* height: 5vw;*/
+  width: 99vw;
+  /* height: 5vw; */
+  height: -moz-fit-content;
   height: fit-content;
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px); /* For Safari */
+  border-radius: var(--border-radius);
+  background: var(--color-orange);
+  margin: 0.5vw;
 }
 
 .nav {
@@ -226,7 +228,7 @@ a {
 }
 
 a::after {
-  background-color: var(--color-orange);
+  background-color: var(--foreground-primary);
 }
 
 .logo-container {

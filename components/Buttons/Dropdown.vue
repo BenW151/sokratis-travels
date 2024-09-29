@@ -122,7 +122,7 @@ nav .lucide {
 }
 
 .dropdown-content a.link::after {
-  background-color: var(--color-orange);
+  background-color: var(--foreground-primary);
 }
 
 body.scrolled-past-header .dropdown-content a.link,
