@@ -134,19 +134,19 @@ const isInternalLink = (url) => {
 }
 
 .item-grid-item:nth-child(4n + 1) {
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 3;
 }
 
 .item-grid-item:nth-child(4n + 2) {
-  grid-column: 5 / span 4;
+  grid-column: 4 / span 3;
 }
 
 .item-grid-item:nth-child(4n + 3) {
-  grid-column: 9 / span 4;
+  grid-column: 7 / span 3;
 }
 
 .item-grid-item:nth-child(4n + 4) {
-  grid-column: 13 / span 4;
+  grid-column: 10 / span 3;
 }
 
 /* Destination Specific Styles */

@@ -446,7 +446,7 @@
               compensation.
             </p>
 
-            <h4>17. Compliance with Legislation</h4>
+            <h4>13. Compliance with Legislation</h4>
 
             <p>
               You must comply with all laws of the country you are visiting. You

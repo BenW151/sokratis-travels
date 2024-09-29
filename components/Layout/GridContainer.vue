@@ -18,7 +18,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   column-gap: 1.3888888889vw;
   row-gap: 1.3888888889vw;
   overflow: hidden;

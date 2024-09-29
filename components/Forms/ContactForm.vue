@@ -93,22 +93,19 @@ const initialFormData = {
 
 const formData = ref({ ...initialFormData });
 const message = ref("");
-const config = useRuntimeConfig()
+const config = useRuntimeConfig();
 
 const submitForm = async () => {
   message.value = "Submitting...";
 
   try {
-    const response = await fetch(
-      config.public.CONTACT_API_URL,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData.value),
-      }
-    );
+    const response = await fetch(config.public.CONTACT_API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData.value),
+    });
 
     const result = await response.json();
 
@@ -185,12 +182,12 @@ form label:nth-child(4) {
 }
 
 #contact-form .paragraph-with-title {
-  grid-column: 1 / 9;
+  grid-column: 1 / 7;
   grid-row: 2;
 }
 
 .contact-form {
-  grid-column: 10 / 17;
+  grid-column: 10 / 13;
   grid-row: 2;
 }
 

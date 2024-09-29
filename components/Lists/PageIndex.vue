@@ -50,7 +50,7 @@ onMounted(() => {
 
 <style scoped>
 .page-index {
-  grid-column: 1 / 17;
+  grid-column: 1 / 13;
   margin: auto;
 }
 

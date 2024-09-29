@@ -3,7 +3,7 @@
     <div
       class="background-color rellax"
       v-rellax
-      style="background: var(--color-cream);"></div>
+      style="background: var(--color-cream)"></div>
     <div
       v-if="imageUrl"
       class="background-image rellax"
@@ -159,7 +159,7 @@ body.scrolled-from-top .scroll {
 }
 
 .hero-text {
-  grid-column: 1 / 17;
+  grid-column: 1 / 13;
   grid-row-start: 1;
   align-self: center;
   color: var(--color-orange);
@@ -189,7 +189,7 @@ header .item:nth-child(2) {
 }
 
 header .item:nth-child(3) {
-  grid-column: 14 / 17;
+  grid-column: 14 / 13;
   grid-row-start: 1;
   margin-top: auto;
 }

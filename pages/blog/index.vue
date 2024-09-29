@@ -49,12 +49,12 @@ useHead({
 }
 
 .blog-item:nth-child(2n + 1) {
-  grid-column: 1 / 9;
+  grid-column: 1 / 7;
   grid-row: auto;
 }
 
 .blog-item:nth-child(2n) {
-  grid-column: 9 / 17;
+  grid-column: 9 / 13;
   grid-row: auto;
 }
 

@@ -4,7 +4,10 @@
     <Header
       imageAlt="View of Rakaposhi from Karimabad"
       headerClass="header-small">
-      <template #title> On a <span class="underline">Mission</span> to <br/> Meet the World </template>
+      <template #title>
+        On a <span class="underline">Mission</span> to <br />
+        Meet the World
+      </template>
       <template #subtitle> Sokratis Travels </template>
     </Header>
 
@@ -119,29 +122,29 @@ const { windowWidth, isMobile } = useWindowWidth();
 
 <style scoped>
 .text-left .paragraph-with-title {
-  grid-column: 1 / 9;
+  grid-column: 1 / 7;
   grid-row-start: 2;
 }
 
 .text-left .image {
-  grid-column: 10 / 17;
+  grid-column: 8 / 13;
   grid-row-start: 2;
   height: 40vw;
 }
 
 .text-right .paragraph-with-title {
-  grid-column: 9 / 17;
+  grid-column: 8 / 13;
   grid-row-start: 2;
 }
 
 .text-right .image {
-  grid-column: 1 / 8;
+  grid-column: 1 / 7;
   grid-row-start: 2;
   height: 40vw;
 }
 
 .destinations .paragraph-with-title {
-  grid-column: 1 / 9;
+  grid-column: 1 / 7;
   grid-row: 2;
 }
 
@@ -151,13 +154,13 @@ const { windowWidth, isMobile } = useWindowWidth();
 }
 
 .faq .accordion {
-  grid-column: 6 / 17;
+  grid-column: 6 / 13;
   grid-row: 2;
   /*height: 40vw;*/
 }
 
 .end-text a {
-  grid-column: 6 / 17;
+  grid-column: 6 / 13;
   grid-row: 1;
   width: fit-content;
 }
@@ -176,7 +179,7 @@ const { windowWidth, isMobile } = useWindowWidth();
 }
 
 .lead-text .container {
-  background: var(--color-orange)
+  background: var(--color-orange);
 }
 
 .lead-text .color-reveal {
@@ -185,7 +188,7 @@ const { windowWidth, isMobile } = useWindowWidth();
 
 .lead-text .item,
 .lead-text p {
-  grid-column: 1 / 17;
+  grid-column: 1 / 13;
 }
 
 @media (max-width: 767px) {

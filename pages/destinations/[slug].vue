@@ -205,7 +205,7 @@ const { data: destinationData } = await useAsyncData(
 }
 
 .page-index {
-  grid-column: 1 / 17;
+  grid-column: 1 / 13;
   margin: auto;
 }
 
@@ -214,29 +214,29 @@ const { data: destinationData } = await useAsyncData(
 }
 
 .faq .paragraph-with-title:nth-of-type(1) {
-  grid-column: 1 / 9;
+  grid-column: 1 / 7;
   grid-row: 2;
 }
 
 .faq .accordion {
-  grid-column: 10 / 17;
+  grid-column: 10 / 13;
   grid-row: 2;
   /*height: 40vw;*/
 }
 
 .text-left .paragraph-with-title {
-  grid-column: 1 / 9;
+  grid-column: 1 / 7;
   grid-row-start: 2;
 }
 
 .text-left .image {
-  grid-column: 10 / 17;
+  grid-column: 10 / 13;
   grid-row-start: 2;
   height: 40vw;
 }
 
 .text-right .paragraph-with-title {
-  grid-column: 9 / 17;
+  grid-column: 9 / 13;
   grid-row-start: 2;
 }
 
