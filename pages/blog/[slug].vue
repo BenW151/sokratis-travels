@@ -133,7 +133,7 @@ onMounted(() => {
 }
 
 .text-left .image {
-  grid-column: 10 / 13;
+  grid-column: 8 / 13;
   grid-row-start: 2;
   height: 40vw;
 }

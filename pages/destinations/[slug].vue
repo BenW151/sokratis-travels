@@ -219,7 +219,7 @@ const { data: destinationData } = await useAsyncData(
 }
 
 .faq .accordion {
-  grid-column: 10 / 13;
+  grid-column: 8 / 13;
   grid-row: 2;
   /*height: 40vw;*/
 }
@@ -230,18 +230,18 @@ const { data: destinationData } = await useAsyncData(
 }
 
 .text-left .image {
-  grid-column: 10 / 13;
+  grid-column: 8 / 13;
   grid-row-start: 2;
   height: 40vw;
 }
 
 .text-right .paragraph-with-title {
-  grid-column: 9 / 13;
+  grid-column: 7 / 13;
   grid-row-start: 2;
 }
 
 .text-right .image {
-  grid-column: 1 / 8;
+  grid-column: 1 / 6;
   grid-row-start: 2;
   height: 40vw;
 }

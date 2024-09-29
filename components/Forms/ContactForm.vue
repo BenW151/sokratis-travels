@@ -187,7 +187,7 @@ form label:nth-child(4) {
 }
 
 .contact-form {
-  grid-column: 10 / 13;
+  grid-column: 8 / 13;
   grid-row: 2;
 }
 
