@@ -3,7 +3,9 @@
     <div
       class="background-color rellax"
       v-rellax
-      style="background: var(--color-cream)"></div>
+      :style="{
+        backgroundColor: backgroundColor || 'var(--color-cream)',
+      }"></div>
     <div
       v-if="imageUrl"
       class="background-image rellax"
@@ -11,11 +13,6 @@
       data-rellax-speed="3">
       <NuxtImg format="webp" :alt="imageAlt" :src="imageUrl" preload />
     </div>
-    <div
-      v-else
-      v-rellax
-      :style="{ backgroundColor: backgroundColor }"
-      class="background-color rellax"></div>
     <LayoutGridContainer>
       <div class="hero-text item">
         <h1><slot name="title"></slot></h1>
@@ -70,6 +67,7 @@ header {
   z-index: 1;
 }
 
+/* Header Size Classes */
 .header-small {
   min-height: 100lvh;
   height: auto;
@@ -81,6 +79,7 @@ header {
   height: 180lvh;
 }
 
+/* Text Colors */
 header,
 header a,
 header a .lucide {
@@ -91,17 +90,18 @@ header a.link::after {
   background-color: var(--foreground-primary);
 }
 
-.container {
-  min-height: 100lvh;
-}
-
+/* Background Elements */
+.background-color,
 .background-image {
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
   z-index: 0;
-  pointer-events: none;
+}
+
+.background-color {
+  background-color: var(--color-cream);
 }
 
 .background-image img {
@@ -109,20 +109,10 @@ header a.link::after {
   width: 100%;
   object-fit: cover;
   object-position: 50% 50%;
-  top: 0;
-  bottom: 0;
-  right: 0;
   filter: brightness(0.7);
 }
 
-.background-color {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 0;
-}
-
+/* Scroll Indicator */
 .scroll,
 .page-index {
   position: absolute;
@@ -136,21 +126,18 @@ header a.link::after {
 
 .scroll {
   left: var(--spacing-5);
-}
-
-.scroll,
-.scroll .lucide {
   color: var(--background-primary);
-  height: var(--font-size-XXS);
   font-size: var(--font-size-XXS);
-}
-
-.page-index {
-  right: var(--spacing-5);
 }
 
 body.scrolled-from-top .scroll {
   opacity: 0;
+}
+
+/* Hero Text */
+.container {
+  height: 100lvh;
+  background: none;
 }
 
 .hero-text {
@@ -164,28 +151,11 @@ body.scrolled-from-top .scroll {
   font-family: var(--font-family-primary);
   font-weight: 600;
   font-size: var(--font-size-M);
-  align-self: center;
   text-align: center;
 }
 
 .hero-text h3 {
   font-size: var(--font-size-S);
-}
-
-header .container {
-  background: none;
-}
-
-header .item:nth-child(2) {
-  grid-column: 10 / 16;
-  grid-row-start: 2;
-  margin-top: auto;
-}
-
-header .item:nth-child(3) {
-  grid-column: 14 / 13;
-  grid-row-start: 1;
-  margin-top: auto;
 }
 
 @media (max-width: 767px) {
@@ -200,25 +170,13 @@ header .item:nth-child(3) {
   }
 
   .background-image img {
-    height: 60lvh;
-    object-position: 80% 50%;
+    height: 110lvh;
+    object-position: 50% 50%;
   }
 
   .hero-text {
     grid-column: span 6;
     grid-row-start: 1;
-  }
-
-  header .item:nth-child(2) {
-    grid-column: 1 / 7;
-    grid-row-start: 2;
-    margin-top: auto;
-  }
-
-  header .item:nth-child(3) {
-    grid-column: 5 / 7;
-    grid-row-start: 2;
-    margin-top: auto;
   }
 
   .scroll {
@@ -229,20 +187,6 @@ header .item:nth-child(3) {
     font-size: var(--font-size-XS);
     right: 0;
     width: 100%;
-  }
-
-  .background-image img {
-    height: 110lvh;
-    object-position: 50% 50%;
-  }
-
-  .index .background-image {
-    top: 45vh;
-  }
-
-  .index .background-image img {
-    height: 60lvh;
-    object-position: 80% 50%;
   }
 }
 </style>
