@@ -165,6 +165,10 @@ p {
   transition: none;
 }
 
+section {
+  background-color: var(--background-primary);
+  z-index: 10;}
+
 /** Buttons */
 a,
 button {
@@ -288,9 +292,9 @@ li {
     --spacing-3: 4.6vw;
     --spacing-4: 5vw;
     --spacing-5: 7vw;
-    --font-size-XXL: 14vw;
-    --font-size-XL: 12vw;
-    --font-size-L: 10vw;
+    --font-size-XXL: 10vw;
+    --font-size-XL: 9vw;
+    --font-size-L: 8vw;
     --font-size-M: 7vw;
     --font-size-S: 4vw;
     --font-size-XS: 3vw;

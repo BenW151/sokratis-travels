@@ -250,10 +250,6 @@ header .item:nth-child(3) {
     height: 60lvh;
     object-position: 80% 50%;
   }
-
-  .index h1 {
-    font-size: 26vw;
-  }
 }
 </style>
 

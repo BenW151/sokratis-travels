@@ -13,7 +13,8 @@
   background-color: var(--background-primary);
   z-index: 3;
   border-radius: var(--border-radius);
-  margin: 0.5vw;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
 }
 
 .grid {

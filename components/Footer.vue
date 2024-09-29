@@ -124,7 +124,9 @@ footer {
   display: flex;
   align-items: flex-start;
   width: 100%;
-  height: 4vw;
+  z-index: 10;
+  height: fit-content;
+  background: var(--background-primary);
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
