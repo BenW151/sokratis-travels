@@ -237,13 +237,13 @@ a::after {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-S);
   font-weight: 600;
-  text-transform: uppercase;
   margin-bottom: 0.5vw;
   margin-top: 0.5vw;
   margin-left: 0;
   margin-right: 0;
 }
 
+/*
 body.scrolled-past-header a {
   color: var(--foreground-primary);
 }
@@ -252,7 +252,7 @@ body.scrolled-past-header a::after {
   background-color: var(--foreground-primary);
 }
 
-/*.nav-logo {
+.nav-logo {
   filter: invert(100%);
   height: 5vw;
 }

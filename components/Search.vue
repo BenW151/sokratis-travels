@@ -187,7 +187,7 @@ body.scrolled-past-header input::placeholder {
 }
 
 .search .list a::after {
-  background-color: var(--foreground-primary);
+  background-color: var(--color-orange);
 }
 
 body.scrolled-past-header .search .list a {
@@ -195,7 +195,7 @@ body.scrolled-past-header .search .list a {
 }
 
 body.scrolled-past-header .search .list a::after {
-  background-color: var(--foreground-primary);
+  background-color: var(--color-orange);
 }
 
 @media (max-width: 767px) {

@@ -165,13 +165,8 @@ body.scrolled-from-top .scroll {
   color: var(--color-orange);
 }
 
-h1 {
-  text-transform: uppercase;
-}
-
 .hero-text h2 {
   color: var(--foreground-primary);
-  text-transform: uppercase;
   font-family: var(--font-family-primary);
   font-weight: 600;
   font-size: var(--font-size-M);

@@ -92,6 +92,7 @@ const isInternalLink = (url) => {
 .destination-link {
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 
 .item-grid-link::after,
@@ -105,6 +106,7 @@ const isInternalLink = (url) => {
   height: 20vw;
   overflow: hidden;
   margin-bottom: 0;
+  border-radius: var(--border-radius);
 }
 
 .image-container::after {

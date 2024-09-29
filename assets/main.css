@@ -7,13 +7,13 @@
   --spacing-5: 5vw;
 
   /** Other */
-  --border-radius-box: 5px;
+  --border-radius: 1vw;
   --opacity: 70%;
   --background-opacity: rgba(0, 0, 0, 0.1);
 
   /** Colour */
   --color-white: #f2f3f4;
-  --color-black: #070707;
+  --color-black: #201d19;
   --color-grey: #555555;
   --color-pink: #e5cfb8;
   --color-lilac: #bdbfd7;
@@ -24,13 +24,13 @@
   --accent-primary: var(--color-grey);
 
   /** Font Family */
-  --font-family-primary: "Josefin Slab", serif;
-  --font-family-secondary: "Josefin Sans", sans-serif;
+  --font-family-primary: "Merriweather", serif;
+  --font-family-secondary: "DM Sans", sans-serif;
   --font-family-tertiary: "Roboto Flex", sans-serif;
 
   /** Font Size */
   --font-size-XXL: 8vw;
-  --font-size-XL: 8vw;
+  --font-size-XL: 7vw;
   --font-size-L: 6vw;
   --font-size-M: 3vw;
   --font-size-S: 1.8vw;
@@ -71,7 +71,7 @@ html,
 body {
   height: 100%;
   color: var(--foreground-primary);
-  background-color: var(--color-black);
+  background-color: var(--background-primary);
 }
 
 /** Custom Scrollbar */
@@ -209,12 +209,12 @@ button:hover::after {
 
 .underline-out::after {
   transform: scaleX(1);
-  transform-origin: bottom right;
+  transform-origin: bottom left;
 }
 
 .underline-out:hover::after {
   transform: scaleX(0);
-  transform-origin: bottom left;
+  transform-origin: bottom right;
 }
 
 .underline-out-icon {
@@ -237,13 +237,19 @@ button:hover::after {
   position: absolute;
   width: 100%;
   transform: scaleX(1);
-  height: 1px;
+  height: 2px;
   bottom: 0;
   left: 0;
   background-color: var(--color-orange);
   transform-origin: bottom right;
   transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1),
     background-color 0.2s linear;
+}
+
+h1 .underline::after {
+  height: 4px;
+  bottom: 8px;
+  background-color: var(--color-black);
 }
 
 .lucide {

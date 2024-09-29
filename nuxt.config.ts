@@ -44,11 +44,11 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      "Josefin Slab": {
+      "Merriweather": {
         wght: [300, 400, 600],
         ital: [400],
       },
-      "Josefin Sans": {
+      "DM Sans": {
         wght: [300, 400, 600],
         ital: [400],
       },

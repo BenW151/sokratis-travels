@@ -1,10 +1,10 @@
 <template>
   <div class="index">
+    <!--imageUrl="/images/no-bg-image.png"-->
     <Header
-      imageUrl="/images/no-bg-image.png"
       imageAlt="View of Rakaposhi from Karimabad"
       headerClass="header-small">
-      <template #title> On a Mission to Meet the World </template>
+      <template #title> On a <span class="underline">Mission</span> to <br/> Meet the World </template>
       <template #subtitle> Sokratis Travels </template>
     </Header>
 
@@ -173,6 +173,10 @@ const { windowWidth, isMobile } = useWindowWidth();
 
 .carousel .container {
   padding-top: 0;
+}
+
+.lead-text .container {
+  background: var(--color-orange)
 }
 
 .lead-text .color-reveal {

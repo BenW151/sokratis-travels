@@ -60,6 +60,7 @@ const { windowWidth, isMobile } = useWindowWidth();
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: var(--border-radius);
 }
 
 .image-text-overlay .text-wrapper {

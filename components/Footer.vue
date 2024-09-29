@@ -140,7 +140,6 @@ footer .container {
 .footer {
   width: 100%;
   padding-bottom: 5px;
-  margin: 0;
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
@@ -211,7 +210,6 @@ footer .container {
   font-size: var(--font-size-XXL);
   font-family: var(--font-family-primary);
   font-weight: 600;
-  text-transform: uppercase;
   color: var(--foreground-primary);
   margin-bottom: 0;
 }
