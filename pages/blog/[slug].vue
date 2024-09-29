@@ -15,9 +15,14 @@
         <Header
           :imageUrl="doc.headerImageUrl"
           :imageAlt="doc.headerImageAlt"
-          :title="doc.title"
-          :subtitle="doc.subtitle"
-          headerClass="header-small" />
+          headerClass="header-small">
+          <template #title>
+            {{ doc.title }}
+          </template>
+          <template #subtitle>
+            {{ doc.subtitle }}
+          </template>
+        </Header>
 
         <section class="text-left">
           <LayoutGridContainer>

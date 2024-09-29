@@ -3,9 +3,7 @@
     <div
       class="background-color rellax"
       v-rellax
-      style="
-        background: var(--color-cream);
-      "></div>
+      style="background: var(--color-cream);"></div>
     <div
       v-if="imageUrl"
       class="background-image rellax"
@@ -20,8 +18,8 @@
       class="background-color rellax"></div>
     <LayoutGridContainer>
       <div class="hero-text item">
-        <h1>{{ title }}</h1>
-        <h2>{{ subtitle }}</h2>
+        <h1><slot name="title"></slot></h1>
+        <h2><slot name="subtitle"></slot></h2>
       </div>
     </LayoutGridContainer>
     <p class="scroll"><LucideArrowDown /> Scroll</p>
@@ -35,12 +33,6 @@ import { onMounted, onBeforeUnmount, ref } from "vue";
 const props = defineProps({
   imageUrl: String,
   imageAlt: String,
-  title: String,
-  subtitle: String,
-  description: String,
-  buttonText: String,
-  buttonUrl: String,
-  buttonDescription: String,
   headerClass: String,
   backgroundColor: String,
   pageIndexLabels: Array,
@@ -65,7 +57,7 @@ const checkScroll = () => {
 
 onMounted(() => {
   window.addEventListener("scroll", checkScroll);
-  checkScroll(); // Check the scroll position on mount
+  checkScroll();
 });
 
 onBeforeUnmount(() => {

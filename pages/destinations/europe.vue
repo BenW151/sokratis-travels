@@ -3,9 +3,9 @@
     <Header
       imageUrl="/images/denmark-cover.png"
       imageAlt="TODO alt"
-      title="Europe"
-      subtitle="Your Guide to Europe."
       headerClass="header-small">
+      <template #title> Europe </template>
+      <template #subtitle> Explore Posts by Destination. </template>
     </Header>
 
     <BlogCountryPosts region="europe" />

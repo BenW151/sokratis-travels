@@ -3,9 +3,9 @@
     <Header
       imageUrl="/images/canada-cover.png"
       imageAlt="TODO alt"
-      title="North America"
-      subtitle="Explore Posts by Destination."
       headerClass="header-small">
+      <template #title> North America </template>
+      <template #subtitle> Explore Posts by Destination. </template>
     </Header>
 
     <BlogCountryPosts region="north-america" labelText="Blog Posts">

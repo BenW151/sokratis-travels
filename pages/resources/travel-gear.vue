@@ -3,9 +3,9 @@
     <Header
       imageUrl="/images/index-background.png"
       imageAlt="TODO alt"
-      title="Travel Gear"
-      subtitle="My Essential Gear."
       headerClass="header-small">
+      <template #title> Travel Gear </template>
+      <template #subtitle> My Essential Gear. </template>
     </Header>
 
     <section class="contents">

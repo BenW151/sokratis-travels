@@ -3,9 +3,9 @@
     <Header
       imageUrl="/images/index-background.png"
       imageAlt="TODO alt"
-      title="Resources"
-      subtitle="Some Helpful Tools for Travel."
       headerClass="header-small">
+      <template #title> Resources </template>
+      <template #subtitle> Some Helpful Tools for Travel. </template>
     </Header>
 
     <section class="contents">

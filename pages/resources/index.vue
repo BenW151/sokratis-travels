@@ -3,9 +3,9 @@
     <Header
       imageUrl="/images/index-background.png"
       imageAlt="TODO alt"
-      title="Resources"
-      subtitle="Helpful Resources."
       headerClass="header-small">
+      <template #title> Resources </template>
+      <template #subtitle> Helpful Resources. </template>
     </Header>
 
     <ItemGridItems labelText="Resources">

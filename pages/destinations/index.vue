@@ -3,9 +3,9 @@
     <Header
       imageUrl="/images/index-background.png"
       imageAlt="TODO alt"
-      title="Destinations"
-      subtitle="Explore Posts by Destination."
       headerClass="header-small">
+      <template #title> Destinations </template>
+      <template #subtitle> Explore Posts by Destination. </template>
     </Header>
 
     <BlogRegions />

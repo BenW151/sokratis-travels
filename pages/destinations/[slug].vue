@@ -6,16 +6,24 @@
       backgroundColor="var(--background-primary)"
       title=""
       subtitle=""
-      headerClass="header-small" />
+      headerClass="header-small">
+      <template #title> </template>
+      <template #subtitle> </template>
+    </Header>
 
     <article v-if="contentLoaded">
       <!-- Actual Header -->
       <Header
         :imageUrl="destinationData.headerImageUrl"
         :imageAlt="destinationData.headerImageAlt"
-        :title="destinationData.title"
-        :subtitle="destinationData.subtitle"
-        headerClass="header-small" />
+        headerClass="header-small">
+        <template #title>
+          {{ destinationData.title }}
+        </template>
+        <template #subtitle>
+          {{ destinationData.subtitle }}
+        </template>
+      </Header>
 
       <section class="contents">
         <LayoutGridContainer>

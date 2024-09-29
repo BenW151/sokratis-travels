@@ -3,9 +3,9 @@
     <Header
       imageUrl="/images/jordan-cover.png"
       imageAlt="TODO alt"
-      title="Middle East"
-      subtitle="Explore Posts by Destination."
       headerClass="header-small">
+      <template #title> Middle East </template>
+      <template #subtitle> Explore Posts by Destination. </template>
     </Header>
 
     <BlogCountryPosts region="middle-east" labelText="Blog Posts">

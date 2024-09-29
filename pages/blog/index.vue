@@ -3,9 +3,9 @@
     <Header
       imageUrl="/images/index-background.png"
       imageAlt="Laptop with code on desk"
-      title="Recent Posts"
-      subtitle="Recent Blog Posts."
       headerClass="header-small">
+      <template #title> Recent Posts </template>
+      <template #subtitle> Recent Blog Posts. </template>
     </Header>
 
     <BlogRecentPosts />

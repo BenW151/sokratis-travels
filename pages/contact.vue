@@ -3,9 +3,9 @@
     <Header
       imageUrl="/images/index-background.png"
       imageAlt="Attabad Lake"
-      title="Contact"
-      subtitle="Have a question? Let us know"
       headerClass="header-small">
+      <template #title> Contact </template>
+      <template #subtitle> Have a question? Let us know </template>
     </Header>
 
     <section id="contact-form">

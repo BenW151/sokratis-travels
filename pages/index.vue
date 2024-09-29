@@ -3,9 +3,9 @@
     <Header
       imageUrl="/images/no-bg-image.png"
       imageAlt="View of Rakaposhi from Karimabad"
-      title="On a Mission to Meet the World"
-      subtitle="Sokratis Travels"
       headerClass="header-small">
+      <template #title> On a Mission to Meet the World </template>
+      <template #subtitle> Sokratis Travels </template>
     </Header>
 
     <main>

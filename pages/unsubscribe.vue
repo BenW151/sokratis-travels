@@ -3,9 +3,9 @@
     <Header
       imageUrl="/images/index-background.png"
       imageAlt="View of Rakaposhi from Karimabad"
-      title="Unsubscribe"
-      subtitle="Enter Your Email Below"
       headerClass="header-small">
+      <template #title> Unsubscribe </template>
+      <template #subtitle> Enter Your Email Below. </template>
     </Header>
 
     <div class="unsubscribe">
