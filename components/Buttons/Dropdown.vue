@@ -122,9 +122,9 @@ nav .lucide {
 }
 
 .dropdown-content a.link::after {
-  background-color: var(--foreground-primary);
+  background-color: var(--color-orange);
 }
-
+/*
 body.scrolled-past-header .dropdown-content a.link,
 body.scrolled-past-header nav .lucide {
   color: var(--foreground-primary);
@@ -133,7 +133,7 @@ body.scrolled-past-header nav .lucide {
 
 body.scrolled-past-header .dropdown-content a.link::after {
   background-color: var(--foreground-primary);
-}
+}*/
 
 .dropdown:hover .lucide {
   rotate: 45deg;

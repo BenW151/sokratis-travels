@@ -19,7 +19,7 @@
         <h2><slot name="subtitle"></slot></h2>
       </div>
     </LayoutGridContainer>
-    <p class="scroll"><LucideArrowDown /> Scroll</p>
+    <p class="scroll"><LucideArrowDown /> Scroll to Explore</p>
     <ListsPageIndex v-if="pageIndexLabels" :labels="pageIndexLabels" />
   </header>
 </template>
@@ -90,6 +90,10 @@ header a.link::after {
   background-color: var(--foreground-primary);
 }
 
+.lucide {
+  color: var(--background-primary);
+}
+
 /* Background Elements */
 .background-color,
 .background-image {
@@ -149,7 +153,6 @@ body.scrolled-from-top .scroll {
 
 .hero-text h2 {
   font-family: var(--font-family-primary);
-  font-weight: 600;
   font-size: var(--font-size-M);
   text-align: center;
 }

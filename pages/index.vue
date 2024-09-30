@@ -178,9 +178,6 @@ const { windowWidth, isMobile } = useWindowWidth();
   padding-top: 0;
 }
 
-.lead-text .container {
-  background: var(--color-orange);
-}
 
 .lead-text .color-reveal {
   font-size: var(--font-size-M);

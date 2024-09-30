@@ -12,19 +12,20 @@
   --background-opacity: rgba(0, 0, 0, 0.1);
 
   /** Colour */
-  --color-white: #f2f3f4;
+  --color-white: #FFFFFF;
   --color-black: #201d19;
   --color-grey: #555555;
   --color-pink: #e5cfb8;
   --color-lilac: #bdbfd7;
-  --color-orange: #e56144;
+  --color-orange: #D57800;
+  --color-green: #4E5B31;
   --color-cream: #fff9ed;
-  --foreground-primary: var(--color-black);
-  --background-primary: var(--color-cream);
+  --foreground-primary: var(--color-green);
+  --background-primary: var(--color-white);
   --accent-primary: var(--color-grey);
 
   /** Font Family */
-  --font-family-primary: "Merriweather", serif;
+  --font-family-primary: "DM Sans", serif;
   --font-family-secondary: "DM Sans", sans-serif;
   --font-family-tertiary: "Roboto Flex", sans-serif;
 
@@ -102,11 +103,11 @@ element {
 
 ::-moz-selection {
   color: var(--background-primary);
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--color-orange);
 }
 
 ::selection {
-  color: var(--foreground-primary);
+  color: var(--background-primary);
   background: var(--color-orange);
 }
 
@@ -127,8 +128,9 @@ h1 {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-XXL);
   margin-bottom: 0;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
+  line-height: 1;
 }
 
 h2 {
@@ -252,7 +254,7 @@ button:hover::after {
 
 h1 .underline::after {
   height: 4px;
-  bottom: 8px;
+  bottom: 12px;
 }
 
 .lucide {

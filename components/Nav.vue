@@ -172,7 +172,9 @@ nav {
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   border-radius: var(--border-radius);
-  background: var(--color-orange);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   margin: 0.5vw;
 }
 
@@ -200,26 +202,6 @@ nav {
   transform-origin: bottom left;
 }
 
-/*.contact {
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px); 
-  border: 1px solid var(--background-primary);
-  border-radius: 5vw;
-  padding: var(--spacing-1) var(--spacing-3);
-  margin-left: auto;
-  margin-right: 0;
-}
-
-.contact:hover {
-  background: var(--color-orange);
-  color: var(--background-primary);
-  border: 1px solid var(--background-primary);
-}
-
-.contact::after {
-  display: none;
-}*/
-
 a {
   margin: 0 var(--spacing-3);
   color: var(--foreground-primary);
@@ -228,7 +210,7 @@ a {
 }
 
 a::after {
-  background-color: var(--foreground-primary);
+  background-color: var(--color-orange);
 }
 
 .logo-container {
@@ -238,7 +220,7 @@ a::after {
 .wordmark {
   font-family: var(--font-family-primary);
   font-size: var(--font-size-S);
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 0.5vw;
   margin-top: 0.5vw;
   margin-left: 0;

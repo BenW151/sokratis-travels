@@ -1,5 +1,11 @@
 <template>
   <footer ref="footer">
+    <LayoutGridContainer class="footer-text">
+      <p>
+        On a Mission to <br />
+        Meet The World
+      </p>
+    </LayoutGridContainer>
     <LayoutGridContainer class="footer">
       <div class="work-with-me">
         <FormsNewsletter />
@@ -121,22 +127,32 @@ onMounted(() => {
 
 <style scoped>
 footer {
-  display: flex;
-  align-items: flex-start;
   width: 100%;
   z-index: 10;
   height: fit-content;
   background: var(--background-primary);
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  background-image: url("/images/mountain-sunset.jpg");
 }
 
 footer .container {
-  color: var(--foreground-primary);
-  background: var(--color-orange);
-  padding-bottom: var(--spacing-3);
+  color: var(--background-primary);
   white-space: nowrap;
-  background-size: cover;
-  background-position: 25% center;
+}
+
+.footer-text {
+  background: none;
+  height: 40vw;
+}
+
+.footer-text p {
+  grid-column: 1 / 13;
+  font-size: var(--font-size-XXL);
+  font-family: var(--font-family-primary);
+  line-height: 1;
+  text-align: center;
+  align-self: center;
+  margin: 0;
 }
 
 .footer {
@@ -145,6 +161,9 @@ footer .container {
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 .footer .footer-contact {
@@ -193,7 +212,6 @@ footer .container {
   grid-column: 11 / 13;
   grid-row: 2;
   margin-top: auto;
-  color: var(--foreground-primary);
 }
 
 .subtitle {
@@ -211,16 +229,10 @@ footer .container {
   transform: translateX(-0.5vw);
   font-size: var(--font-size-XXL);
   font-family: var(--font-family-primary);
-  font-weight: 600;
-  color: var(--foreground-primary);
   margin-bottom: 0;
 }
 
 @media (max-width: 767px) {
-  footer {
-    height: 6vh;
-  }
-
   footer::after {
     width: calc(100% - (2 * var(--spacing-4)));
   }
@@ -228,6 +240,15 @@ footer .container {
   .footer {
     align-items: start;
     margin: 0;
+  }
+
+  .footer-text {
+    background: none;
+    height: 80vw;
+  }
+
+  .footer-text p {
+    grid-column: 1 / 7;
   }
 
   .footer .item {
@@ -259,13 +280,12 @@ footer .container {
     grid-column: 4 / 7;
     grid-row: 3;
     margin-top: auto;
-    color: var(--foreground-primary);
   }
 
   .wordmark {
     grid-column: 1 / 7;
     grid-row: 4;
-    font-size: 16.5vw;
+    font-size: 12.5vw;
   }
 
   h5 {
@@ -280,6 +300,10 @@ footer .container {
 <style>
 footer a::after,
 footer button::after {
-  background-color: var(--foreground-primary);
+  background-color: var(--color-orange);
+}
+
+footer a {
+  color: var(--background-primary);
 }
 </style>
