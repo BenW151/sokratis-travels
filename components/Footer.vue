@@ -128,8 +128,9 @@ onMounted(() => {
 <style scoped>
 footer {
   width: 100%;
+  height:fit-content;
+  padding-bottom: 0.5vw;
   z-index: 10;
-  height: fit-content;
   background: var(--background-primary);
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   background-image: url("/images/mountain-sunset.jpg");
@@ -156,7 +157,9 @@ footer .container {
 }
 
 .footer {
-  width: 100%;
+  width: 99vw;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
   padding-bottom: 5px;
   align-items: center;
   justify-content: space-between;
@@ -164,6 +167,7 @@ footer .container {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
+  border-radius: var(--border-radius);
 }
 
 .footer .footer-contact {

@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <Header
-      imageUrl="/images/denmark-cover.png"
+      imageUrl="/images/mountain-sunset.jpg"
       imageAlt="View of Rakaposhi from Karimabad"
       headerClass="header-small">
       <template #title>
