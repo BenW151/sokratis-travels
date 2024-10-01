@@ -86,12 +86,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-orange);
-  border: 2px solid var(--color-orange);
+  background-color: var(--color-green);
+  border: 2px solid var(--color-green);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-orange);
+  background: var(--color-green);
 }
 
 element {

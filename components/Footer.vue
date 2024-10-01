@@ -5,6 +5,11 @@
         On a Mission to <br />
         Meet The World
       </p>
+
+      <ButtonsRounded destination="/contact" aria-label="Go to Contact Page">
+        Contact Me
+      </ButtonsRounded>
+
     </LayoutGridContainer>
     <LayoutGridContainer class="footer">
       <div class="work-with-me">
@@ -128,7 +133,7 @@ onMounted(() => {
 <style scoped>
 footer {
   width: 100%;
-  height:fit-content;
+  height: fit-content;
   padding-bottom: 0.5vw;
   z-index: 10;
   background: var(--background-primary);
@@ -137,13 +142,13 @@ footer {
 }
 
 footer .container {
-  color: var(--background-primary);
   white-space: nowrap;
 }
 
 .footer-text {
   background: none;
   height: 40vw;
+  color: var(--color-white);
 }
 
 .footer-text p {
@@ -156,6 +161,15 @@ footer .container {
   margin: 0;
 }
 
+.footer-text .rounded-button {
+  grid-column: 1 / 13;
+  text-align: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
 .footer {
   width: 99vw;
   margin-left: 0.5vw;
@@ -164,7 +178,7 @@ footer .container {
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: var(--border-radius);
@@ -305,9 +319,5 @@ footer .container {
 footer a::after,
 footer button::after {
   background-color: var(--color-orange);
-}
-
-footer a {
-  color: var(--background-primary);
 }
 </style>
