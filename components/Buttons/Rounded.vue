@@ -63,7 +63,7 @@ const isInternalLink = (url) => {
   padding-left: 1vw;
   border-radius: 9999px;
   background-color: var(--background-primary);
-  color: var(--color-green);
+  color: var(--foreground-primary);
   text-decoration: none;
 }
 
