@@ -300,6 +300,9 @@ li {
     --font-size-S: 4vw;
     --font-size-XS: 3vw;
     --font-size-XXS: 2vw;
+
+    --border-radius: 3vw;
+
   }
 
   html {

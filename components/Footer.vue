@@ -254,11 +254,6 @@ footer .container {
     width: calc(100% - (2 * var(--spacing-4)));
   }
 
-  .footer {
-    align-items: start;
-    margin: 0;
-  }
-
   .footer-text {
     background: none;
     height: 80vw;

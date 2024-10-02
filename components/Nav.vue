@@ -307,7 +307,6 @@ body.scrolled-past-header .nav-logo {
 
   .wordmark {
     margin: 0;
-    color: var(--background-primary);
   }
 
   .nav-logo {
@@ -333,7 +332,7 @@ body.scrolled-past-header .nav-logo {
   .burger-menu span {
     width: 100%;
     height: 1px;
-    background: var(--background-primary);
+    background: var(--foreground-primary);
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
