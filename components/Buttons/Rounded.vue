@@ -58,17 +58,17 @@ const isInternalLink = (url) => {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  height: fit-content;
+  height: 3vw;
   padding: 0.5vw;
   padding-left: 1vw;
   border-radius: 9999px;
   background-color: var(--background-primary);
-  color: var(--foreground-primary);
+  color: var(--color-green);
   text-decoration: none;
 }
 
 .rounded-button.dark {
-  background-color: var(--foreground-primary); /* Swap colors for dark mode */
+  background-color: var(--color-green); /* Swap colors for dark mode */
   color: var(--background-primary);
 }
 
@@ -76,22 +76,22 @@ const isInternalLink = (url) => {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--foreground-primary);
+  background-color: var(--color-green);
   color: var(--background-primary);
   border-radius: 50%;
-  width: 2vw;
-  height: 2vw;
+  width: 0vw;
+  height: 0vw;
   margin-left: 0.5vw;
   position: relative;
 }
 
 .rounded-button.dark .icon-wrapper {
   background-color: var(--background-primary); /* Swap colors for dark mode */
-  color: var(--foreground-primary);
+  color: var(--color-green);
 }
 
 .rounded-button.dark .lucide {
-  color: var(--foreground-primary);
+  color: var(--color-green);
 }
 
 .rounded-button::after {
@@ -100,11 +100,7 @@ const isInternalLink = (url) => {
 
 @keyframes move-and-fade {
   0% {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-  50% {
-    transform: translate(0.5em, -0.5em);
+    transform: translate(-0.5em, 0.5em);
     opacity: 0;
   }
   51% {
@@ -126,17 +122,28 @@ const isInternalLink = (url) => {
   animation: move-and-fade 0.6s ease;
 }
 
+.rounded-button:hover .icon-wrapper {
+  width: 2vw;
+  height: 2vw;
+}
+
 @media (max-width: 767px) {
   .rounded-button {
     padding: 1.5vw;
     padding-left: 3vw;
     border-radius: 9999px;
+    height: fit-content;
   }
 
   .icon-wrapper {
     width: 5vw;
-    height:5vw;
+    height: 5vw;
     margin-left: 1.5vw;
+  }
+
+  .rounded-button:hover .icon-wrapper {
+    width: 5vw;
+    height: 5vw;
   }
 }
 </style>
