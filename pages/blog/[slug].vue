@@ -139,12 +139,12 @@ onMounted(() => {
 }
 
 .text-right .paragraph-with-title {
-  grid-column: 9 / 13;
+  grid-column: 7 / 13;
   grid-row-start: 2;
 }
 
 .text-right .image {
-  grid-column: 1 / 8;
+  grid-column: 1 / 6;
   grid-row-start: 2;
   height: 40vw;
 }
