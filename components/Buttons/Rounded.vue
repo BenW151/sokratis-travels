@@ -3,7 +3,7 @@
     v-if="isInternalLink(destination)"
     :to="destination"
     :aria-label="ariaLabel"
-    class="rounded-button"
+    :class="['rounded-button', { dark: darkMode }]"
   >
     <span class="button-text">
       <slot />
@@ -16,7 +16,7 @@
     v-else
     :href="destination"
     :aria-label="ariaLabel"
-    class="rounded-button"
+    :class="['rounded-button', { dark: darkMode }]"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -33,7 +33,7 @@
 import { defineProps } from 'vue';
 import { LucideArrowUpRight } from 'lucide-vue-next';
 
-// Define props for destination link and aria-label
+// Define props for destination, aria-label, and darkMode
 const props = defineProps({
   destination: {
     type: String,
@@ -42,6 +42,10 @@ const props = defineProps({
   ariaLabel: {
     type: String,
     required: false,
+  },
+  darkMode: {
+    type: Boolean,
+    default: false, // Default to light mode
   },
 });
 
@@ -65,8 +69,9 @@ const isInternalLink = (url) => {
   text-decoration: none;
 }
 
-.rounded-button::after {
-  display: none;
+.rounded-button.dark {
+  background-color: var(--foreground-primary); /* Swap colors for dark mode */
+  color: var(--background-primary);
 }
 
 .icon-wrapper {
@@ -80,6 +85,19 @@ const isInternalLink = (url) => {
   height: 2vw;
   margin-left: 0.5vw;
   position: relative;
+}
+
+.rounded-button.dark .icon-wrapper {
+  background-color: var(--background-primary); /* Swap colors for dark mode */
+  color: var(--foreground-primary);
+}
+
+.rounded-button.dark .lucide {
+  color: var(--foreground-primary);
+}
+
+.rounded-button::after {
+  display: none;
 }
 
 @keyframes move-and-fade {
@@ -106,9 +124,7 @@ const isInternalLink = (url) => {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-
 .rounded-button:hover .arrow-icon {
   animation: move-and-fade 0.6s ease;
 }
-
 </style>

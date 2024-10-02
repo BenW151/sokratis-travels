@@ -6,10 +6,11 @@
         Meet The World
       </p>
 
-      <ButtonsRounded destination="/contact" aria-label="Go to Contact Page">
+      <ButtonsRounded
+        destination="/contact"
+        aria-label="Go to Contact Page">
         Contact Me
       </ButtonsRounded>
-      
     </LayoutGridContainer>
     <LayoutGridContainer class="footer">
       <div class="work-with-me">

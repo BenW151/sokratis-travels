@@ -39,6 +39,12 @@
                 information you need to plan an unforgettable journey. Start
                 your adventure today and let the world be your playground!
               </p>
+              <ButtonsRounded
+                destination="/resources"
+                aria-label="Go to Resources Page"
+                darkMode="true">
+                View Travel Resources
+              </ButtonsRounded>
             </template>
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
@@ -79,13 +85,12 @@
                 local cultures, and uncover the stories that make each adventure
                 unique. Let's travel the world together!
               </p>
-              <a
-                href="https://instagram.com/teetravels_"
-                aria-label="Instagram"
-                class="underline-out-icon link"
-                target="_blank"
-                ><LucideExternalLink />View Instagram</a
-              >
+              <ButtonsRounded
+                destination="https://instagram.com/teetravels_"
+                aria-label="Go to Instagram"
+                darkMode="true">
+                View Instagram
+              </ButtonsRounded>
             </template>
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
@@ -177,7 +182,6 @@ const { windowWidth, isMobile } = useWindowWidth();
 .carousel .container {
   padding-top: 0;
 }
-
 
 .lead-text .color-reveal {
   font-size: var(--font-size-M);
