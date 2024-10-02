@@ -3,8 +3,7 @@
     v-if="isInternalLink(destination)"
     :to="destination"
     :aria-label="ariaLabel"
-    :class="['rounded-button', { dark: darkMode }]"
-  >
+    :class="['rounded-button', { dark: darkMode }]">
     <span class="button-text">
       <slot />
     </span>
@@ -18,8 +17,7 @@
     :aria-label="ariaLabel"
     :class="['rounded-button', { dark: darkMode }]"
     target="_blank"
-    rel="noopener noreferrer"
-  >
+    rel="noopener noreferrer">
     <span class="button-text">
       <slot />
     </span>
@@ -30,8 +28,8 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
-import { LucideArrowUpRight } from 'lucide-vue-next';
+import { defineProps } from "vue";
+import { LucideArrowUpRight } from "lucide-vue-next";
 
 // Define props for destination, aria-label, and darkMode
 const props = defineProps({
@@ -51,7 +49,7 @@ const props = defineProps({
 
 // Function to check if the link is internal (starts with / or doesn't have http)
 const isInternalLink = (url) => {
-  return !url.startsWith('http');
+  return !url.startsWith("http");
 };
 </script>
 
@@ -126,5 +124,19 @@ const isInternalLink = (url) => {
 
 .rounded-button:hover .arrow-icon {
   animation: move-and-fade 0.6s ease;
+}
+
+@media (max-width: 767px) {
+  .rounded-button {
+    padding: 1.5vw;
+    padding-left: 3vw;
+    border-radius: 9999px;
+  }
+
+  .icon-wrapper {
+    width: 5vw;
+    height:5vw;
+    margin-left: 1.5vw;
+  }
 }
 </style>

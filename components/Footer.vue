@@ -6,9 +6,7 @@
         Meet The World
       </p>
 
-      <ButtonsRounded
-        destination="/contact"
-        aria-label="Go to Contact Page">
+      <ButtonsRounded destination="/contact" aria-label="Go to Contact Page">
         Contact Me
       </ButtonsRounded>
     </LayoutGridContainer>
@@ -153,7 +151,7 @@ footer .container {
 }
 
 .footer-text p {
-  grid-column: 1 / 13;
+  grid-column: 1 / -1;
   font-size: var(--font-size-XXL);
   font-family: var(--font-family-primary);
   line-height: 1;
@@ -163,7 +161,7 @@ footer .container {
 }
 
 .footer-text .rounded-button {
-  grid-column: 1 / 13;
+  grid-column: 1 / -1;
   text-align: center;
   justify-self: center;
   display: flex;
@@ -243,7 +241,7 @@ footer .container {
 }
 
 .wordmark {
-  grid-column: 1 / 13;
+  grid-column: 1 / -1;
   grid-row: 2;
   transform: translateX(-0.5vw);
   font-size: var(--font-size-XXL);

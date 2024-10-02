@@ -145,7 +145,7 @@ body.scrolled-from-top .scroll {
 }
 
 .hero-text {
-  grid-column: 1 / 13;
+  grid-column: 1 / -1;
   grid-row-start: 1;
   align-self: center;
   color: var(--color-white);
