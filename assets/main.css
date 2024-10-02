@@ -23,6 +23,7 @@
   --foreground-primary: var(--color-black);
   --background-primary: var(--color-white);
   --accent-primary: var(--color-grey);
+  --opacity-background: rgba(255, 255, 255, 0.5);
 
   /** Font Family */
   --font-family-primary: "DM Sans", serif;

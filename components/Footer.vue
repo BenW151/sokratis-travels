@@ -177,7 +177,7 @@ footer .container {
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.5);
+  background: var(--opacity-background);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius: var(--border-radius);

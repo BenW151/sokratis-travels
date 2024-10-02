@@ -172,7 +172,7 @@ nav {
   z-index: 1000;
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   border-radius: var(--border-radius);
-  background: rgba(255, 255, 255, 0.5);
+  background: var(--opacity-background);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   margin: 0.5vw;
