@@ -24,7 +24,7 @@
       </template>
       <ItemGridItem
         itemUrl="https://booking.com"
-        itemImage="/images/bookingcom-logo.png"
+        itemImage="/images/resources/bookingcom-logo.png"
         itemImageAlt="Image 1 description"
         itemLabel="Booking.com"
         itemDescription="Offering a vast selection of accommodations worldwide, 
@@ -33,7 +33,7 @@
           with user reviews and flexible booking options." />
       <ItemGridItem
         itemUrl="https://hostelworld.com"
-        itemImage="/images/hostelworld-logo.png"
+        itemImage="/images/resources/hostelworld-logo.png"
         itemImageAlt="Image 1 description"
         itemLabel="Hostel World"
         itemDescription="Hostelworld is the go-to platform for backpackers
@@ -41,7 +41,7 @@
           and shared accommodations in cities and off-the-beaten-path destinations." />
       <ItemGridItem
         itemUrl="https://hotels.com"
-        itemImage="/images/hotelscom-logo.png"
+        itemImage="/images/resources/hotelscom-logo.png"
         itemImageAlt="Image 1 description"
         itemLabel="Hotels.com"
         itemDescription="Hotels.com provides an extensive range of hotel 
@@ -49,7 +49,7 @@
           rewards program, making it a great choice for frequent travelers." />
       <ItemGridItem
         itemUrl="https://airbnb.com"
-        itemImage="/images/airbnb-logo.png"
+        itemImage="/images/resources/airbnb-logo.png"
         itemImageAlt="Image 1 description"
         itemLabel="AirBnB"
         itemDescription="Airbnb offers unique stays in local homes, 
@@ -68,7 +68,7 @@
       </template>
       <ItemGridItem
         itemUrl="https://trustedhousesitters.com"
-        itemImage="/images/ths-logo.png"
+        itemImage="/images/resources/ths-logo.png"
         itemImageAlt="Image 1 description"
         itemLabel="Trusted House Sitters"
         itemDescription="Here are some of my favourite resources to help you make the most of
@@ -76,7 +76,7 @@
           gathered everything you need to prepare for your adventures." />
       <ItemGridItem
         itemUrl="https://couchsurfing.com"
-        itemImage="/images/couchsurfing-logo.png"
+        itemImage="/images/resources/couchsurfing-logo.png"
         itemImageAlt="Image 1 description"
         itemLabel="Couchsurfing"
         itemDescription="Here are some of my favourite resources to help you make the most of
@@ -94,7 +94,7 @@
       </template>
       <ItemGridItem
         itemUrl="https://skyscanner.com"
-        itemImage="/images/skyscanner-logo.png"
+        itemImage="/images/resources/skyscanner-logo.png"
         itemImageAlt="Image 1 description"
         itemLabel="SkyScanner"
         itemDescription="Here are some of my favourite resources to help you make the most of
@@ -102,7 +102,7 @@
           gathered everything you need to prepare for your adventures." />
       <ItemGridItem
         itemUrl="https://googleflights.com"
-        itemImage="/images/googleflights-logo.png"
+        itemImage="/images/resources/googleflights-logo.png"
         itemImageAlt="Image 1 description"
         itemLabel="Google Flights"
         itemDescription="Here are some of my favourite resources to help you make the most of
@@ -120,7 +120,7 @@
       </template>
       <ItemGridItem
         itemUrl="https://alltrails.com"
-        itemImage="/images/alltrails-logo.png"
+        itemImage="/images/resources/alltrails-logo.png"
         itemImageAlt="Image 1 description"
         itemLabel="AllTrails"
         itemDescription="Here are some of my favourite resources to help you make the most of
@@ -128,7 +128,7 @@
           gathered everything you need to prepare for your adventures." />
       <ItemGridItem
         itemUrl="https://mapsme.com"
-        itemImage="/images/mapsme-logo.png"
+        itemImage="/images/resources/mapsme-logo.png"
         itemImageAlt="Image 1 description"
         itemLabel="Maps.me"
         itemDescription="Here are some of my favourite resources to help you make the most of

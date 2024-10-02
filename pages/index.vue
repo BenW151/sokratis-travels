@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <Header
-      imageUrl="/images/mountain-sunset.jpg"
+      imageUrl="/images/larnaca.jpg"
       imageAlt="View of Rakaposhi from Karimabad"
       headerClass="header-small">
       <template #title>
@@ -94,7 +94,7 @@
             </template>
           </TextParagraphWithTitle>
           <ImageWithTextOverlay
-            imageUrl="/images/tia-passu.webp"
+            imageUrl="/images/sokratis-diving.jpg"
             imageAlt="Passu Cones, Pakistan"
             overlayText="Passu Cones, <br /> Pakistan"
             textPosition="left" />
