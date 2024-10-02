@@ -57,7 +57,8 @@ const isInternalLink = (url) => {
   align-items: center;
   justify-content: space-between;
   height: fit-content;
-  padding: 1vw;
+  padding: 0.5vw;
+  padding-left: 1vw;
   border-radius: 9999px;
   background-color: var(--background-primary);
   color: var(--foreground-primary);
