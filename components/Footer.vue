@@ -137,7 +137,7 @@ footer {
   z-index: 10;
   background: var(--background-primary);
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  background-image: url("/images/mountain-sunset.jpg");
+  background-image: url("/images/cyprus-kouklia.jpg");
 }
 
 footer .container {
