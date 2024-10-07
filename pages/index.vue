@@ -42,7 +42,7 @@
               <ButtonsRounded
                 destination="/resources"
                 aria-label="Go to Resources Page"
-                darkMode="true">
+                :darkMode="true">
                 View Travel Resources
               </ButtonsRounded>
             </template>
@@ -88,7 +88,7 @@
               <ButtonsRounded
                 destination="https://instagram.com/teetravels_"
                 aria-label="Go to Instagram"
-                darkMode="true">
+                :darkMode="true">
                 View Instagram
               </ButtonsRounded>
             </template>
