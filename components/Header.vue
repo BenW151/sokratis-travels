@@ -1,16 +1,14 @@
 <template>
   <header ref="headerRef" :class="headerClass" id="header">
+    <!--<div
+      ref="backgroundColorRef"
+      class="background-color"
+      :style="{ backgroundColor: backgroundColor || 'var(--color-cream)' }"
+    ></div>-->
     <div
-      class="background-color rellax"
-      v-rellax
-      :style="{
-        backgroundColor: backgroundColor || 'var(--color-cream)',
-      }"></div>
-    <div
+      ref="backgroundImageRef"
       v-if="imageUrl"
-      class="background-image rellax"
-      v-rellax
-      data-rellax-speed="3">
+      class="background-image no-transition">
       <NuxtImg format="webp" :alt="imageAlt" :src="imageUrl" preload />
     </div>
     <LayoutGridContainer>
@@ -20,12 +18,13 @@
       </div>
     </LayoutGridContainer>
     <p class="scroll"><LucideArrowDown /> Scroll to Explore</p>
-    <ListsPageIndex v-if="pageIndexLabels" :labels="pageIndexLabels" />
+    <!--<ListsPageIndex v-if="pageIndexLabels" :labels="pageIndexLabels" />-->
   </header>
 </template>
 
 <script setup>
 import { onMounted, onBeforeUnmount, ref } from "vue";
+import { useNuxtApp } from "#app";
 
 const props = defineProps({
   imageUrl: String,
@@ -35,7 +34,11 @@ const props = defineProps({
   pageIndexLabels: Array,
 });
 
+const { $gsap } = useNuxtApp();
+
 const headerRef = ref(null);
+const backgroundImageRef = ref(null);
+const backgroundColorRef = ref(null);
 
 const checkScroll = () => {
   if (!headerRef.value) return;
@@ -55,15 +58,30 @@ const checkScroll = () => {
 onMounted(() => {
   window.addEventListener("scroll", checkScroll);
   checkScroll();
-});
+
+  // Parallax effect for the background image
+  $gsap.to(backgroundImageRef.value, {
+    yPercent: 15,
+    ease: "none",
+    scrollTrigger: {
+      trigger: headerRef.value,
+      start: "top top",
+      end: "bottom top",
+      scrub: true,
+    },
+  });});
 
 onBeforeUnmount(() => {
   window.removeEventListener("scroll", checkScroll);
+  $gsap.killTweensOf([backgroundImageRef.value, backgroundColorRef.value]);
+  $gsap.globalTimeline.clear();
 });
 </script>
 
 <style scoped>
 header {
+  position: relative;
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -99,9 +117,11 @@ header a.link::after {
 .background-image {
   width: 100%;
   height: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
+  left: 0;
   z-index: 0;
+  will-change: transform;
 }
 
 .background-color {

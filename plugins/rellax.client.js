@@ -1,4 +1,4 @@
-import Rellax from 'rellax';
+/*import Rellax from 'rellax';
 
 export default defineNuxtPlugin(nuxtApp => {
   nuxtApp.vueApp.directive('rellax', {
@@ -53,4 +53,4 @@ export default defineNuxtPlugin(nuxtApp => {
       el.cleanupRellax && el.cleanupRellax();
     }
   });
-});
+});*/

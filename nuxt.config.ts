@@ -60,7 +60,7 @@ export default defineNuxtConfig({
     display: "swap",
   },
 
-  plugins: ["~/plugins/rellax.client.js"],
+  plugins: ["~/plugins/gsap.client.js"],
 
   router: {
     options: {

@@ -45,7 +45,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  transition: all 0.3s ease-in-out, color 0.2s linear,
+ transition: all 0.3s ease-in-out, color 0.2s linear,
     background-color 0.2s linear;
   position: relative;
   padding: 0;
@@ -272,6 +272,10 @@ h1 .underline::after {
 .underline-out-icon:hover svg {
   padding-right: var(--spacing-1);
   max-width: 2rem;
+}
+
+.no-transition {
+  transition: none;
 }
 
 /** Lists */
