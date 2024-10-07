@@ -25,7 +25,7 @@
       <section class="about text-left">
         <LayoutGridContainer>
           <TextSectionLabel labelText="About" />
-          <TextParagraphWithTitle subtitleTag="h3">
+          <LayoutColumn subtitleTag="h3">
             <template #title>Start Planning Your Trip </template>
             <template #body>
               <p>
@@ -46,7 +46,7 @@
                 View Travel Resources
               </ButtonsRounded>
             </template>
-          </TextParagraphWithTitle>
+          </LayoutColumn>
           <ImageWithTextOverlay
             imageUrl="/images/denmark-cover.png"
             imageAlt="Copenhagen, Denmark"
@@ -72,7 +72,7 @@
       <section class="profile text-right">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Profile" />
-          <TextParagraphWithTitle subtitleTag="h3" textPosition="right">
+          <LayoutColumn subtitleTag="h3" textPosition="right">
             <template #title>Who Am I?</template>
             <template #body>
               <p>
@@ -92,7 +92,7 @@
                 View Instagram
               </ButtonsRounded>
             </template>
-          </TextParagraphWithTitle>
+          </LayoutColumn>
           <ImageWithTextOverlay
             imageUrl="/images/sokratis-diving.jpg"
             imageAlt="Passu Cones, Pakistan"
@@ -126,7 +126,7 @@ const { windowWidth, isMobile } = useWindowWidth();
 </script>
 
 <style scoped>
-.text-left .paragraph-with-title {
+.text-left .column {
   grid-column: 1 / 7;
   grid-row-start: 2;
 }
@@ -137,7 +137,7 @@ const { windowWidth, isMobile } = useWindowWidth();
   height: 40vw;
 }
 
-.text-right .paragraph-with-title {
+.text-right .column {
   grid-column: 7 / 13;
   grid-row-start: 2;
 }
@@ -148,12 +148,12 @@ const { windowWidth, isMobile } = useWindowWidth();
   height: 40vw;
 }
 
-.destinations .paragraph-with-title {
+.destinations .column {
   grid-column: 1 / 7;
   grid-row: 2;
 }
 
-.faq .paragraph-with-title:nth-of-type(1) {
+.faq .column:nth-of-type(1) {
   grid-column: 6 / 14;
   grid-row: 1;
 }

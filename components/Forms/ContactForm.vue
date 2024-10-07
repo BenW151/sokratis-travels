@@ -1,7 +1,7 @@
 <template>
   <LayoutGridContainer>
     <TextSectionLabel labelText="Contact" />
-    <TextParagraphWithTitle subtitleTag="h3" linkUrl="/facilities">
+    <LayoutColumn subtitleTag="h3" linkUrl="/facilities">
       <template #title>Get in Touch</template>
       <template #body>
         <p>
@@ -33,7 +33,7 @@
             },
           ]" />
       </template>
-    </TextParagraphWithTitle>
+    </LayoutColumn>
     <div class="item contact-form">
       <h4>Contact Form</h4>
       <div>
@@ -181,7 +181,7 @@ form label:nth-child(4) {
   grid-row-start: 3;
 }
 
-#contact-form .paragraph-with-title {
+#contact-form .column {
   grid-column: 1 / 7;
   grid-row: 2;
 }
@@ -192,7 +192,7 @@ form label:nth-child(4) {
 }
 
 @media (max-width: 767px) {
-  #contact-form .item.paragraph-with-title {
+  #contact-form .item.column {
     grid-column: 1 / 7;
     grid-row: auto;
   }

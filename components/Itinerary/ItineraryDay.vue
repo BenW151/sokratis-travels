@@ -11,14 +11,12 @@
         :imageAlt="imageAlt"
         :overlayText="overlayText"
         :textPosition="imageTextPosition" />
-      <TextParagraphWithTitle
-        :subtitleTag="subtitleTag"
-        :textPosition="textPosition">
+      <LayoutColumn :subtitleTag="subtitleTag" :textPosition="textPosition">
         <template #title>{{ title }}</template>
         <template #body>
           <slot name="body"></slot>
         </template>
-      </TextParagraphWithTitle>
+      </LayoutColumn>
     </LayoutGridContainer>
   </section>
 </template>
@@ -71,12 +69,12 @@ export default {
   grid-row-start: 1;
 }
 
-#day1 .paragraph-with-title,
+#day1 .column,
 #day1 .image {
   grid-row-start: 2;
 }
 
-.left .paragraph-with-title {
+.left .column {
   grid-column: 3 / 10;
   grid-row-start: 1;
 }
@@ -87,7 +85,7 @@ export default {
   height: 40vw;
 }
 
-.right .paragraph-with-title {
+.right .column {
   grid-column: 9 / 16;
   grid-row-start: 1;
 }
@@ -105,7 +103,7 @@ export default {
   }
 
   .heading,
-  #day1 .paragraph-with-title,
+  #day1 .column,
   #day1 .image {
     grid-column: 1 / 7;
     grid-row-start: auto;

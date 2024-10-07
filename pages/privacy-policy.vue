@@ -2,7 +2,7 @@
   <div class="privacy-policy">
     <section id="policy">
       <LayoutGridContainer>
-        <TextParagraphWithTitle subtitleTag="h3">
+        <LayoutColumn subtitleTag="h3">
           <template #title>Privacy Policy</template>
           <template #body>
             <p>
@@ -151,7 +151,7 @@
               >.
             </p>
           </template>
-        </TextParagraphWithTitle>
+        </LayoutColumn>
       </LayoutGridContainer>
     </section>
   </div>
@@ -187,7 +187,7 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-#policy .paragraph-with-title:nth-of-type(1) {
+#policy .column:nth-of-type(1) {
   grid-column: 2 / 10;
   grid-row: 1;
 }
@@ -198,7 +198,7 @@ onBeforeUnmount(() => {
 }
 
 @media (max-width: 767px) {
-  #policy .item.paragraph-with-title {
+  #policy .item.column {
     grid-column: 1 / 7;
     grid-row: auto;
     margin-top: 6vh;

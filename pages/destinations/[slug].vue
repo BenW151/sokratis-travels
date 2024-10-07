@@ -34,7 +34,7 @@
       <section class="spending text-left" id="spending">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Spending" />
-          <TextParagraphWithTitle subtitleTag="h3">
+          <LayoutColumn subtitleTag="h3">
             <template #title>Spending</template>
             <template #body>
               <p v-html="destinationData.spending"></p>
@@ -42,7 +42,7 @@
               <OtherCurrencyConversion
                 :fromCurrency="destinationData.currency" />
             </template>
-          </TextParagraphWithTitle>
+          </LayoutColumn>
           <ImageWithTextOverlay
             :imageUrl="destinationData.spendingImageUrl"
             :imageAlt="destinationData.spendingImageAlt"
@@ -54,12 +54,12 @@
       <section class="getting-around text-right" id="getting-around">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Getting Around" />
-          <TextParagraphWithTitle subtitleTag="h3">
+          <LayoutColumn subtitleTag="h3">
             <template #title>Getting Around</template>
             <template #body>
               <p v-html="destinationData.gettingAround"></p>
             </template>
-          </TextParagraphWithTitle>
+          </LayoutColumn>
           <ImageWithTextOverlay
             :imageUrl="destinationData.gettingAroundImageUrl"
             :imageAlt="destinationData.gettingAroundImageAlt"
@@ -71,12 +71,12 @@
       <section class="things-to-do text-left" id="things-to-do">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Things To Do" />
-          <TextParagraphWithTitle subtitleTag="h3">
+          <LayoutColumn subtitleTag="h3">
             <template #title>Things To Do</template>
             <template #body>
               <p v-html="destinationData.thingsToDo"></p>
             </template>
-          </TextParagraphWithTitle>
+          </LayoutColumn>
           <ImageWithTextOverlay
             :imageUrl="destinationData.thingsToDoImageUrl"
             :imageAlt="destinationData.thingsToDoImageAlt"
@@ -88,12 +88,12 @@
       <section class="where-to-stay text-right" id="where-to-stay">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Where To Stay" />
-          <TextParagraphWithTitle subtitleTag="h3">
+          <LayoutColumn subtitleTag="h3">
             <template #title>Where To Stay</template>
             <template #body>
               <p v-html="destinationData.whereToStay"></p>
             </template>
-          </TextParagraphWithTitle>
+          </LayoutColumn>
           <ImageWithTextOverlay
             :imageUrl="destinationData.whereToStayImageUrl"
             :imageAlt="destinationData.whereToStayImageAlt"
@@ -105,7 +105,7 @@
       <section class="faq" id="faq">
         <LayoutGridContainer>
           <TextSectionLabel labelText="FAQ" />
-          <TextParagraphWithTitle subtitleTag="h3">
+          <LayoutColumn subtitleTag="h3">
             <template #title>FAQ</template>
             <template #body>
               <p>
@@ -118,7 +118,7 @@
                 useful information to make any trip smoother and more enjoyable.
               </p>
             </template>
-          </TextParagraphWithTitle>
+          </LayoutColumn>
           <Accordion>
             <AccordionItem
               :title="`Is ${destinationData.title} worth visiting?`"
@@ -213,7 +213,7 @@ const { data: destinationData } = await useAsyncData(
   display: none;
 }
 
-.faq .paragraph-with-title:nth-of-type(1) {
+.faq .column:nth-of-type(1) {
   grid-column: 1 / 7;
   grid-row: 2;
 }
@@ -224,7 +224,7 @@ const { data: destinationData } = await useAsyncData(
   /*height: 40vw;*/
 }
 
-.text-left .paragraph-with-title {
+.text-left .column {
   grid-column: 1 / 7;
   grid-row-start: 2;
 }
@@ -235,7 +235,7 @@ const { data: destinationData } = await useAsyncData(
   height: 40vw;
 }
 
-.text-right .paragraph-with-title {
+.text-right .column {
   grid-column: 7 / 13;
   grid-row-start: 2;
 }

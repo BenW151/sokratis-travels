@@ -2,7 +2,7 @@
   <div class="terms">
     <section id="terms">
       <LayoutGridContainer>
-        <TextParagraphWithTitle subtitleTag="h3">
+        <LayoutColumn subtitleTag="h3">
           <template #title>Terms + Conditions</template>
           <template #body>
             <p>
@@ -534,7 +534,7 @@
               >.
             </p>
           </template>
-        </TextParagraphWithTitle>
+        </LayoutColumn>
       </LayoutGridContainer>
     </section>
   </div>
@@ -570,13 +570,13 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-#terms .paragraph-with-title:nth-of-type(1) {
+#terms .column:nth-of-type(1) {
   grid-column: 2 / 10;
   grid-row: 1;
 }
 
 @media (max-width: 767px) {
-  #terms .item.paragraph-with-title {
+  #terms .item.column {
     grid-column: 1 / 7;
     grid-row: auto;
     margin-top: 6vh;

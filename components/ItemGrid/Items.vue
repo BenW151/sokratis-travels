@@ -3,14 +3,14 @@
     <section class="item-grid-items-text text-left">
       <LayoutGridContainer>
         <TextSectionLabel :labelText="labelText" />
-        <TextParagraphWithTitle subtitle-tag="h3" text-position="left">
+        <LayoutColumn subtitle-tag="h3" text-position="left">
           <template #title>
             <slot name="title"></slot>
           </template>
           <template #body>
             <slot name="body"></slot>
           </template>
-        </TextParagraphWithTitle>
+        </LayoutColumn>
       </LayoutGridContainer>
     </section>
 
@@ -28,7 +28,7 @@ defineProps({
     type: String,
     required: true,
   },
-})
+});
 </script>
 
 <style scoped>
@@ -41,7 +41,7 @@ defineProps({
 }
 
 @media (max-width: 767px) {
-  .item-grid-items-text .paragraph-with-title {
+  .item-grid-items-text .column {
     grid-column: 1 / 7;
   }
 }

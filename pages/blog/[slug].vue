@@ -27,12 +27,12 @@
         <section class="text-left">
           <LayoutGridContainer>
             <TextSectionLabel :labelText="doc.sectionOneTitle" />
-            <TextParagraphWithTitle subtitleTag="h3">
+            <LayoutColumn subtitleTag="h3">
               <template #title>{{ doc.sectionOneTitle }}</template>
               <template #body>
                 <p v-html="doc.sectionOneText"></p>
               </template>
-            </TextParagraphWithTitle>
+            </LayoutColumn>
             <ImageWithTextOverlay
               :imageUrl="doc.sectionOneImageUrl"
               :imageAlt="doc.sectionOneImageAlt"
@@ -44,12 +44,12 @@
         <section class="text-right">
           <LayoutGridContainer>
             <TextSectionLabel :labelText="doc.sectionTwoTitle" />
-            <TextParagraphWithTitle subtitleTag="h3">
+            <LayoutColumn subtitleTag="h3">
               <template #title>{{ doc.sectionTwoTitle }}</template>
               <template #body>
                 <p v-html="doc.sectionTwoText"></p>
               </template>
-            </TextParagraphWithTitle>
+            </LayoutColumn>
             <ImageWithTextOverlay
               :imageUrl="doc.sectionTwoImageUrl"
               :imageAlt="doc.sectionTwoImageAlt"
@@ -61,12 +61,12 @@
         <section class="text-left">
           <LayoutGridContainer>
             <TextSectionLabel :labelText="doc.sectionThreeTitle" />
-            <TextParagraphWithTitle subtitleTag="h3">
+            <LayoutColumn subtitleTag="h3">
               <template #title>{{ doc.sectionThreeTitle }}</template>
               <template #body>
                 <p v-html="doc.sectionThreeText"></p>
               </template>
-            </TextParagraphWithTitle>
+            </LayoutColumn>
             <ImageWithTextOverlay
               :imageUrl="doc.sectionThreeImageUrl"
               :imageAlt="doc.sectionThreeImageAlt"
@@ -78,12 +78,12 @@
         <section class="text-right">
           <LayoutGridContainer>
             <TextSectionLabel :labelText="doc.sectionFourTitle" />
-            <TextParagraphWithTitle subtitleTag="h3">
+            <LayoutColumn subtitleTag="h3">
               <template #title>{{ doc.sectionFourTitle }}</template>
               <template #body>
                 <p v-html="doc.sectionFourText"></p>
               </template>
-            </TextParagraphWithTitle>
+            </LayoutColumn>
             <ImageWithTextOverlay
               :imageUrl="doc.sectionFourImageUrl"
               :imageAlt="doc.sectionFourImageAlt"
@@ -127,7 +127,7 @@ onMounted(() => {
   grid-column: 5 / 13;
 }
 
-.text-left .paragraph-with-title {
+.text-left .column {
   grid-column: 1 / 7;
   grid-row-start: 2;
 }
@@ -138,7 +138,7 @@ onMounted(() => {
   height: 40vw;
 }
 
-.text-right .paragraph-with-title {
+.text-right .column {
   grid-column: 7 / 13;
   grid-row-start: 2;
 }

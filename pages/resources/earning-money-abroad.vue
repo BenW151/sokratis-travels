@@ -88,7 +88,7 @@ useHead({
 <style scoped></style>
 
 <style>
-.text-left .paragraph-with-title {
+.text-left .column {
   grid-column: 1 / 7;
   grid-row-start: 2;
 }
@@ -99,7 +99,7 @@ useHead({
   height: 40vw;
 }
 
-.text-right .paragraph-with-title {
+.text-right .column {
   grid-column: 9 / 13;
   grid-row-start: 2;
 }
