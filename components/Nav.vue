@@ -246,7 +246,7 @@ body.scrolled-past-header .nav-logo {
 }*/
 
 .dropdown {
-  margin: 0 var(--spacing-3);
+  margin-left: var(--spacing-3);
 }
 
 .search {
