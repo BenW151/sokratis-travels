@@ -21,51 +21,53 @@
           {{ currentTime }} | {{ currentDate }}
         </p>
       </div>
-      <ListsLinkList
-        class="nav-links"
-        :links="[
-          { url: '/', label: 'About', description: 'About Page' },
-          {
-            url: '/destinations',
-            label: 'Destinations',
-            description: 'Destinations Page',
-          },
-          {
-            url: '/resources',
-            label: 'Resources',
-            description: 'Resources Page',
-          },
-          { url: '/contact', label: 'Contact', description: 'Contact Page' },
-          {
-            url: '/terms-and-conditions',
-            label: 'Terms + Conditions',
-            description: 'Terms + Conditions Page',
-          },
-          {
-            url: '/privacy-policy',
-            label: 'Privacy Policy',
-            description: 'Privacy Policy',
-          },
-        ]" />
-      <ListsLinkList
-        class="socials"
-        :links="[
-          {
-            url: 'https://www.instagram.com/benward.io/',
-            label: 'Instagram',
-            description: 'Instagram',
-          },
-          {
-            url: 'https://linkedin.com/in/benw151',
-            label: 'Facebook',
-            description: 'Facebook',
-          },
-          {
-            url: 'https://github.com/BenW151',
-            label: 'X',
-            description: 'X',
-          },
-        ]" />
+      <div class="nav-links">
+        <ListsLinkList
+          :links="[
+            { url: '/', label: 'About', description: 'About Page' },
+            {
+              url: '/destinations',
+              label: 'Destinations',
+              description: 'Destinations Page',
+            },
+            {
+              url: '/resources',
+              label: 'Resources',
+              description: 'Resources Page',
+            },
+            { url: '/contact', label: 'Contact', description: 'Contact Page' },
+            {
+              url: '/terms-and-conditions',
+              label: 'Terms + Conditions',
+              description: 'Terms + Conditions Page',
+            },
+            {
+              url: '/privacy-policy',
+              label: 'Privacy Policy',
+              description: 'Privacy Policy',
+            },
+          ]" />
+      </div>
+      <div class="socials">
+        <ListsLinkList
+          :links="[
+            {
+              url: 'https://www.instagram.com/benward.io/',
+              label: 'Instagram',
+              description: 'Instagram',
+            },
+            {
+              url: 'https://linkedin.com/in/benw151',
+              label: 'Facebook',
+              description: 'Facebook',
+            },
+            {
+              url: 'https://github.com/BenW151',
+              label: 'X',
+              description: 'X',
+            },
+          ]" />
+      </div>
       <p class="wordmark">Sokratis Travels</p>
       <div class="copyright">
         <p class="item">Copyright ©2024</p>
