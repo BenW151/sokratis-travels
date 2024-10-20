@@ -3,6 +3,7 @@
     <Header
       imageUrl="/images/larnaca.jpg"
       imageAlt="View of Rakaposhi from Karimabad"
+      imageLocation="34.9182° N, 33.6201° E"
       headerClass="header-small">
       <template #title>
         On a <span class="underline">Mission</span> to <br />

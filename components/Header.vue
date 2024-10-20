@@ -18,6 +18,9 @@
       </div>
     </LayoutGridContainer>
     <p class="scroll"><LucideArrowDown /> Scroll to Explore</p>
+    <p v-if="imageLocation" class="location">
+      <LucideCompass /> {{ imageLocation }}
+    </p>
     <!--<ListsPageIndex v-if="pageIndexLabels" :labels="pageIndexLabels" />-->
   </header>
 </template>
@@ -29,6 +32,7 @@ import { useNuxtApp } from "#app";
 const props = defineProps({
   imageUrl: String,
   imageAlt: String,
+  imageLocation: String,
   headerClass: String,
   backgroundColor: String,
   pageIndexLabels: Array,
@@ -69,7 +73,8 @@ onMounted(() => {
       end: "bottom top",
       scrub: true,
     },
-  });});
+  });
+});
 
 onBeforeUnmount(() => {
   window.removeEventListener("scroll", checkScroll);
@@ -138,7 +143,8 @@ header a.link::after {
 
 /* Scroll Indicator */
 .scroll,
-.page-index {
+.page-index,
+.location {
   position: absolute;
   bottom: var(--spacing-4);
   z-index: 100;
@@ -146,12 +152,16 @@ header a.link::after {
   display: flex;
   align-items: center;
   opacity: var(--opacity);
+  font-size: var(--font-size-XS);
+  color: var(--background-primary);
 }
 
 .scroll {
   left: var(--spacing-5);
-  color: var(--background-primary);
-  font-size: var(--font-size-XXS);
+}
+
+.location {
+  right: var(--spacing-5);
 }
 
 body.scrolled-from-top .scroll {
