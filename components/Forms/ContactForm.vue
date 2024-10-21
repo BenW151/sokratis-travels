@@ -95,12 +95,12 @@ const formData = ref({ ...initialFormData });
 const message = ref("");
 const config = useRuntimeConfig();
 
+const apiUrl = "https://contact.sokratistravels.com/";
 const submitForm = async () => {
   message.value = "Submitting...";
 
   try {
-    console.log("API URL:", config.public.CONTACT_API_URL);
-    const response = await fetch(config.public.CONTACT_API_URL, {
+    const response = await fetch(apiUrl, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
