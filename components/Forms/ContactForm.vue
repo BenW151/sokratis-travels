@@ -1,8 +1,8 @@
 <template>
   <LayoutGridContainer>
     <TextSectionLabel labelText="Contact" />
-    <LayoutColumn subtitleTag="h3" linkUrl="/facilities">
-      <template #title>Get in Touch</template>
+    <LayoutColumn linkUrl="/facilities">
+      <template #title><h3>Get in Touch</h3></template>
       <template #body>
         <p>
           I'd love to hear from you! Whether you have questions, need travel

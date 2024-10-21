@@ -26,8 +26,8 @@
       <section class="about text-left">
         <LayoutGridContainer>
           <TextSectionLabel labelText="About" />
-          <LayoutColumn subtitleTag="h3">
-            <template #title>Start Planning Your Trip </template>
+          <LayoutColumn>
+            <template #title><h3>Start Planning Your Trip</h3></template>
             <template #body>
               <p>
                 Ready to turn your travel dreams into reality? Whether you're
@@ -73,8 +73,8 @@
       <section class="profile text-right">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Profile" />
-          <LayoutColumn subtitleTag="h3" textPosition="right">
-            <template #title>Who Am I?</template>
+          <LayoutColumn>
+            <template #title><h3>Who Am I?</h3></template>
             <template #body>
               <p>
                 Hi, I'm Tia, your guide to the world's most exciting

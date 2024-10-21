@@ -1,37 +1,27 @@
 <template>
-  <div class="item column">
-    <!--<div :class="[textPosition]">-->
-      <component :is="subtitleTag" class="subtitle">
-        <template v-if="useTextReveal">
-          <TextReveal>
-            <slot name="title"></slot>
-          </TextReveal>
-        </template>
-        <template v-else>
+  <div class="column">
+    
+    <template v-if="useTextReveal">
+      <TextReveal>
+        <div class="subtitle">
           <slot name="title"></slot>
-        </template>
-      </component>
+        </div>
+      </TextReveal>
+    </template>
 
-      <slot name="body">
-        <p class="body">Default paragraph content.</p>
-      </slot>
-   <!-- </div>-->
+    <template v-else>
+      <slot name="title" class="subtitle"></slot>
+    </template>
+
+    <slot name="body" class="body"> </slot>
   </div>
 </template>
 
 <script setup>
 const props = defineProps({
-  subtitleTag: {
-    type: String,
-    default: "h3",
-  },
   useTextReveal: {
     type: Boolean,
     default: false, // Use TextReveal by default
-  },
-  textPosition: {
-    type: String,
-    default: "left",
   },
 });
 </script>

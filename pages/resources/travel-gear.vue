@@ -17,8 +17,8 @@
     <section class="about text-left">
       <LayoutGridContainer>
         <TextSectionLabel labelText="Travel Essentials" />
-        <LayoutColumn subtitleTag="h3">
-          <template #title>Travel Essentials</template>
+        <LayoutColumn>
+          <template #title><h3>Travel Essentials</h3></template>
           <template #body>
             <p>
               When it comes to travel, having the right gear can make all the

@@ -27,8 +27,8 @@
         <section class="text-left">
           <LayoutGridContainer>
             <TextSectionLabel :labelText="doc.sectionOneTitle" />
-            <LayoutColumn subtitleTag="h3">
-              <template #title>{{ doc.sectionOneTitle }}</template>
+            <LayoutColumn>
+              <template #title><h3>{{ doc.sectionOneTitle }}</h3></template>
               <template #body>
                 <p v-html="doc.sectionOneText"></p>
               </template>
@@ -44,8 +44,8 @@
         <section class="text-right">
           <LayoutGridContainer>
             <TextSectionLabel :labelText="doc.sectionTwoTitle" />
-            <LayoutColumn subtitleTag="h3">
-              <template #title>{{ doc.sectionTwoTitle }}</template>
+            <LayoutColumn>
+              <template #title><h3>{{ doc.sectionTwoTitle }}</h3></template>
               <template #body>
                 <p v-html="doc.sectionTwoText"></p>
               </template>
@@ -61,8 +61,8 @@
         <section class="text-left">
           <LayoutGridContainer>
             <TextSectionLabel :labelText="doc.sectionThreeTitle" />
-            <LayoutColumn subtitleTag="h3">
-              <template #title>{{ doc.sectionThreeTitle }}</template>
+            <LayoutColumn>
+              <template #title><h3>{{ doc.sectionThreeTitle }}</h3></template>
               <template #body>
                 <p v-html="doc.sectionThreeText"></p>
               </template>
@@ -78,8 +78,8 @@
         <section class="text-right">
           <LayoutGridContainer>
             <TextSectionLabel :labelText="doc.sectionFourTitle" />
-            <LayoutColumn subtitleTag="h3">
-              <template #title>{{ doc.sectionFourTitle }}</template>
+            <LayoutColumn>
+              <template #title><h3>{{ doc.sectionFourTitle }}</h3></template>
               <template #body>
                 <p v-html="doc.sectionFourText"></p>
               </template>

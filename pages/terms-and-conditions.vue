@@ -2,8 +2,8 @@
   <div class="terms">
     <section id="terms">
       <LayoutGridContainer>
-        <LayoutColumn subtitleTag="h3">
-          <template #title>Terms + Conditions</template>
+        <LayoutColumn>
+          <template #title><h3>Terms + Conditions</h3></template>
           <template #body>
             <p>
               Welcome to Sokratis Travels! By using our website and booking our

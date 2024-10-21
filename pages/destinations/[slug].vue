@@ -34,8 +34,8 @@
       <section class="spending text-left" id="spending">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Spending" />
-          <LayoutColumn subtitleTag="h3">
-            <template #title>Spending</template>
+          <LayoutColumn>
+            <template #title><h3>Spending</h3></template>
             <template #body>
               <p v-html="destinationData.spending"></p>
 
@@ -54,8 +54,8 @@
       <section class="getting-around text-right" id="getting-around">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Getting Around" />
-          <LayoutColumn subtitleTag="h3">
-            <template #title>Getting Around</template>
+          <LayoutColumn>
+            <template #title><h3>Getting Around</h3></template>
             <template #body>
               <p v-html="destinationData.gettingAround"></p>
             </template>
@@ -71,8 +71,8 @@
       <section class="things-to-do text-left" id="things-to-do">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Things To Do" />
-          <LayoutColumn subtitleTag="h3">
-            <template #title>Things To Do</template>
+          <LayoutColumn>
+            <template #title><h3>Things To Do</h3></template>
             <template #body>
               <p v-html="destinationData.thingsToDo"></p>
             </template>
@@ -88,8 +88,8 @@
       <section class="where-to-stay text-right" id="where-to-stay">
         <LayoutGridContainer>
           <TextSectionLabel labelText="Where To Stay" />
-          <LayoutColumn subtitleTag="h3">
-            <template #title>Where To Stay</template>
+          <LayoutColumn>
+            <template #title><h3>Where To Stay</h3></template>
             <template #body>
               <p v-html="destinationData.whereToStay"></p>
             </template>
@@ -105,8 +105,8 @@
       <section class="faq" id="faq">
         <LayoutGridContainer>
           <TextSectionLabel labelText="FAQ" />
-          <LayoutColumn subtitleTag="h3">
-            <template #title>FAQ</template>
+          <LayoutColumn>
+            <template #title><h3>FAQ</h3></template>
             <template #body>
               <p>
                 Travel planning often brings up a lot of questions, so this FAQ

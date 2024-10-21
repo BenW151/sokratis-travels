@@ -2,8 +2,8 @@
   <div class="privacy-policy">
     <section id="policy">
       <LayoutGridContainer>
-        <LayoutColumn subtitleTag="h3">
-          <template #title>Privacy Policy</template>
+        <LayoutColumn>
+          <template #title><h3>Privacy Policy</h3></template>
           <template #body>
             <p>
               Thank you for visiting our website. Your privacy is important to
