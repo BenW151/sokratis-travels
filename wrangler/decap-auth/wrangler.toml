@@ -3,7 +3,7 @@ name = "sokratis-travels-oauth"
 main = "src/index.ts"
 compatibility_date = "2024-04-19"
 compatibility_flags = ["nodejs_compat"]
-route = { pattern = "oauth.sokratis-travels.benward.io", zone_name = "benward.io" }
+route = { pattern = "oauth.sokratistravels.com", zone_name = "sokratistravels.com" }
 
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Docs:
