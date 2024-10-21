@@ -32,15 +32,15 @@ export default {
 
 				// Prepare and send email
 				const msg = createMimeMessage();
-				msg.setSender({ name: 'benward.io', addr: 'noreply@benward.io' });
-				msg.setRecipient('ben@benward.io');
+				msg.setSender({ name: 'sokratistravels.com', addr: 'noreply@sokratistravels.com' });
+				msg.setRecipient('contact@sokratistravels.com');
 				msg.setSubject('New Contact Form Submission');
 				msg.addMessage({
 					contentType: 'text/plain',
 					data: `Name: ${name}\nEmail: ${email}\nDestination: ${destination}\nMessage: ${message}`,
 				});
 
-				const emailMessage = new EmailMessage('noreply@benward.io', 'ben@benward.io', msg.asRaw());
+				const emailMessage = new EmailMessage('noreply@sokratistravels.com', 'contact@sokratistravels.com', msg.asRaw());
 
 				await env.emailSender.send(emailMessage);
 

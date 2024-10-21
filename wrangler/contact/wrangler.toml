@@ -13,9 +13,9 @@ kv_namespaces = [
 ]
 
 send_email = [
-  {type = "send_email", name = "emailSender", destination_address = "ben@benward.io"}
+  {type = "send_email", name = "emailSender", destination_address = "contact@sokratistravels.com"}
 ]
 
 [env.production]
-route = "sokratis-travels.benward.io/*"
-zone_id = "02faaa083fe91320956b6c3021ecbd38"
+route = "sokratistravels.com/*"
+zone_id = "992e53a067c9016e45876df5733c3b65"
