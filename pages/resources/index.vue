@@ -9,7 +9,7 @@
     </Header>
 
     <ItemGridItems labelText="Resources">
-      <template #title>Resources</template>
+      <template #title><h3>Resources</h3></template>
       <template #body>
         <p>
           Here are some of my favourite resources to help you make the most of

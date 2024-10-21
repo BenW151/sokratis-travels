@@ -1,7 +1,7 @@
 <template>
   <div class="related-posts">
     <ItemGridItems labelText="Related Posts">
-      <template #title>Related Posts</template>
+      <template #title><h3>Related Posts</h3></template>
       <template #body>
         <p>
           Check out these related posts for more insights and tips on similar

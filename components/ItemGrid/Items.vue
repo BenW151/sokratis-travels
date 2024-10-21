@@ -3,7 +3,7 @@
     <section class="item-grid-items-text text-left">
       <LayoutGridContainer>
         <TextSectionLabel :labelText="labelText" />
-        <LayoutColumn subtitle-tag="h3" text-position="left">
+        <LayoutColumn>
           <template #title>
             <slot name="title"></slot>
           </template>

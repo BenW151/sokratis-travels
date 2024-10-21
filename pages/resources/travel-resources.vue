@@ -15,7 +15,7 @@
     </section>
 
     <ItemGridItems labelText="Accommodation" id="hotels">
-      <template #title>Hotels + Hostels</template>
+      <template #title><h3>Hotels + Hostels</h3></template>
       <template #body>
         <p>
           Here are some of the best hiking gear recommendations that will ensure
@@ -59,7 +59,7 @@
     </ItemGridItems>
 
     <ItemGridItems labelText="Accommodation" id="free-accommodation">
-      <template #title>Free Accommodation</template>
+      <template #title><h3>Free Accommodation</h3></template>
       <template #body>
         <p>
           Here are some of the best hiking gear recommendations that will ensure
@@ -85,7 +85,7 @@
     </ItemGridItems>
 
     <ItemGridItems labelText="Flights" id="flights">
-      <template #title>Flights</template>
+      <template #title><h3>Flights</h3></template>
       <template #body>
         <p>
           Here are some of the best hiking gear recommendations that will ensure
@@ -111,7 +111,7 @@
     </ItemGridItems>
 
     <ItemGridItems labelText="Hiking" id="hiking">
-      <template #title>Hiking</template>
+      <template #title><h3>Hiking</h3></template>
       <template #body>
         <p>
           Here are some of the best hiking gear recommendations that will ensure

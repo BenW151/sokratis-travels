@@ -1,7 +1,7 @@
 <template>
   <div>
     <ItemGridItems labelText="Explore Destinations">
-      <template #title>Countries</template>
+      <template #title><h3>Countries</h3></template>
       <template #body>
         <p>
           Explore some of the most breathtaking destinations around the world,

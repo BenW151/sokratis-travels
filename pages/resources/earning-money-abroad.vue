@@ -9,7 +9,7 @@
     </Header>
 
     <ItemGridItems labelText="Hiking">
-      <template #title>Hiking Gear</template>
+      <template #title><h3>Hiking Gear</h3></template>
       <template #body>
         <p>
           Here are some of the best hiking gear recommendations that will ensure

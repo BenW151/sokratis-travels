@@ -44,7 +44,7 @@
     </section>
 
     <ItemGridItems labelText="Hiking" id="hiking">
-      <template #title>Hiking Gear</template>
+      <template #title><h3>Hiking Gear</h3></template>
       <template #body>
         <p>
           Here are some of the best hiking gear recommendations that will ensure
@@ -72,7 +72,7 @@
     </ItemGridItems>
 
     <ItemGridItems labelText="Camera" id="camera">
-      <template #title>Camera Equipment</template>
+      <template #title><h3>Camera Equipment</h3></template>
       <template #body>
         <p>
           Here are some of the best hiking gear recommendations that will ensure

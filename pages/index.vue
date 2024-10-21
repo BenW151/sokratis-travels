@@ -56,19 +56,7 @@
         </LayoutGridContainer>
       </section>
 
-      <BlogRegions labelText="Destinations">
-        <template #title>Destinations</template>
-        <template #body>
-          <p>
-            Explore the countries I've had the pleasure of visiting. Each
-            destination has its own unique character and charm, offering a
-            diverse range of experiences and stories. Click through to read
-            about my adventures in these places, discover local tips, and see
-            the highlights of each country I've explored. I hope my travels
-            inspire your own journey to these amazing locations!
-          </p>
-        </template>
-      </BlogRegions>
+      <BlogRegions labelText="Destinations"/>
 
       <section class="profile text-right">
         <LayoutGridContainer>

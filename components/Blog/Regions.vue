@@ -1,7 +1,7 @@
 <template>
   <div>
     <ItemGridItems labelText="Regions">
-      <template #title>Regions</template>
+      <template #title><h3>Regions</h3></template>
       <template #body>
         <p>
           Explore the regions I've had the pleasure of visiting. Each

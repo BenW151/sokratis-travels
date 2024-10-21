@@ -1,7 +1,7 @@
 <template>
   <div id="country-posts">
     <ItemGridItems labelText="Posts">
-      <template #title>Blog Posts</template>
+      <template #title><h3>Blog Posts</h3></template>
       <template #body>
         <p>
           Here, you'll find a collection of my latest travel adventures,
