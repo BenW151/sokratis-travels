@@ -54,8 +54,8 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
-import BlogTextWithImage from '~/components/Blog/TextWithImage.vue'; // Import your component
-import ImageStrip from '~/components/Image/ImageStrip.vue'; // Import your component
+import ContentBlockTextWithImage from '~/components/ContentBlocks/TextWithImage.vue'; // Import your component
+import ContentBlockImageStrip from '~/components/ContentBlocks/ImageStrip.vue'; // Import your component
 
 const contentLoaded = ref(false);
 
@@ -69,9 +69,9 @@ onMounted(() => {
 const getComponent = (type) => {
   switch (type) {
     case 'text_with_image':
-      return BlogTextWithImage;
+      return ContentBlockTextWithImage;
     case 'image_strip':
-      return ImageStrip;
+      return ContentBlockImageStrip;
     default:
       return null;
   }
