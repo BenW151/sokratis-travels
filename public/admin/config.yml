@@ -75,6 +75,11 @@ collections:
           name: "headerImageAlt",
           widget: "string",
         }
+      - {
+          label: "Header Image Location",
+          name: "headerImageLocation",
+          widget: "string",
+        }
       - label: "Content Blocks"
         name: "content_blocks"
         widget: "list"
@@ -97,8 +102,8 @@ collections:
             fields:
               - { label: "Image URL", name: "imageUrl", widget: "image" }
               - {
-                  label: "Custom Class",
-                  name: "customClass",
+                  label: "Alt Text",
+                  name: "altText",
                   widget: "string",
                 }
           - label: "Text"

@@ -8,6 +8,7 @@ region: europe
 tag: test
 headerImageUrl: /images/uploads/index-background.webp
 headerImageAlt: content block
+headerImageLocation: Content Block Test
 content_blocks:
   - type: text
     sectionTitle: Text
@@ -38,6 +39,6 @@ content_blocks:
     imageAlt: alt text
   - type: image_strip
     imageUrl: /images/uploads/index-background.webp
-    customClass: class
+    altText: Alt Text
 ---
 .

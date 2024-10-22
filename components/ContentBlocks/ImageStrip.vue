@@ -3,8 +3,8 @@
     <LayoutGridContainer>
       <div
         class="background-image no-transition"
-        :class="customClass"
         :style="{ backgroundImage: `url(${imageUrl})` }"
+        :title="altText"
         ref="backgroundImageRef"></div>
     </LayoutGridContainer>
   </section>
@@ -19,7 +19,7 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  customClass: {
+  altText: {
     type: String,
     default: '',
   },

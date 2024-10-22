@@ -15,6 +15,7 @@
         <Header
           :imageUrl="doc.headerImageUrl"
           :imageAlt="doc.headerImageAlt"
+          :imageLocation="doc.headerImageLocation"
           headerClass="header-small">
           <template #title>
             {{ doc.title }}
