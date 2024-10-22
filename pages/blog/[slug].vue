@@ -24,74 +24,16 @@
           </template>
         </Header>
 
-        <section class="text-left">
-          <LayoutGridContainer>
-            <TextSectionLabel :labelText="doc.sectionOneTitle" />
-            <LayoutColumn>
-              <template #title><h3>{{ doc.sectionOneTitle }}</h3></template>
-              <template #body>
-                <p v-html="doc.sectionOneText"></p>
-              </template>
-            </LayoutColumn>
-            <ImageWithTextOverlay
-              :imageUrl="doc.sectionOneImageUrl"
-              :imageAlt="doc.sectionOneImageAlt"
-              :overlayText="doc.sectionOneImageAlt"
-              textPosition="right" />
-          </LayoutGridContainer>
-        </section>
+        <!-- Render content blocks dynamically -->
+        <div v-for="(block, index) in doc.content_blocks" :key="index">
+          <!-- Dynamically load the correct component for each block type -->
+          <component
+            :is="getComponent(block.type)"
+            v-bind="block"
+          />
+        </div>
 
-        <section class="text-right">
-          <LayoutGridContainer>
-            <TextSectionLabel :labelText="doc.sectionTwoTitle" />
-            <LayoutColumn>
-              <template #title><h3>{{ doc.sectionTwoTitle }}</h3></template>
-              <template #body>
-                <p v-html="doc.sectionTwoText"></p>
-              </template>
-            </LayoutColumn>
-            <ImageWithTextOverlay
-              :imageUrl="doc.sectionTwoImageUrl"
-              :imageAlt="doc.sectionTwoImageAlt"
-              :overlayText="doc.sectionTwoImageAlt"
-              textPosition="left" />
-          </LayoutGridContainer>
-        </section>
-
-        <section class="text-left">
-          <LayoutGridContainer>
-            <TextSectionLabel :labelText="doc.sectionThreeTitle" />
-            <LayoutColumn>
-              <template #title><h3>{{ doc.sectionThreeTitle }}</h3></template>
-              <template #body>
-                <p v-html="doc.sectionThreeText"></p>
-              </template>
-            </LayoutColumn>
-            <ImageWithTextOverlay
-              :imageUrl="doc.sectionThreeImageUrl"
-              :imageAlt="doc.sectionThreeImageAlt"
-              :overlayText="doc.sectionThreeImageAlt"
-              textPosition="right" />
-          </LayoutGridContainer>
-        </section>
-
-        <section class="text-right">
-          <LayoutGridContainer>
-            <TextSectionLabel :labelText="doc.sectionFourTitle" />
-            <LayoutColumn>
-              <template #title><h3>{{ doc.sectionFourTitle }}</h3></template>
-              <template #body>
-                <p v-html="doc.sectionFourText"></p>
-              </template>
-            </LayoutColumn>
-            <ImageWithTextOverlay
-              :imageUrl="doc.sectionFourImageUrl"
-              :imageAlt="doc.sectionFourImageAlt"
-              :overlayText="doc.sectionFourImageAlt"
-              textPosition="left" />
-          </LayoutGridContainer>
-        </section>
-
+        <!-- Related Posts Section -->
         <BlogRelatedPosts labelText="Related Posts">
           <template #title>Related Posts</template>
           <template #body>
@@ -112,6 +54,8 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
+import BlogTextWithImage from '~/components/Blog/TextWithImage.vue'; // Import your component
+import ImageStrip from '~/components/Image/ImageStrip.vue'; // Import your component
 
 const contentLoaded = ref(false);
 
@@ -120,6 +64,18 @@ onMounted(() => {
     contentLoaded.value = true;
   }, 200);
 });
+
+// Function to determine which component to render for each block type
+const getComponent = (type) => {
+  switch (type) {
+    case 'text_with_image':
+      return BlogTextWithImage;
+    case 'image_strip':
+      return ImageStrip;
+    default:
+      return null;
+  }
+};
 </script>
 
 <style scoped>

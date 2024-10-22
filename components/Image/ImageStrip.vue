@@ -1,125 +1,88 @@
 <template>
-  <div class="image-strip container">
-    <template v-if="isImage">
-      <NuxtImg
-        format="webp"
-        :alt="alt"
-        :src="src"
-        class="item rellax"
-        v-rellax
-        :data-rellax-percentage="rellaxPercentage" />
-    </template>
-    <template v-else>
-      <video
-        ref="video"
-        @click="videoClicked"
-        :poster="poster"
-        :src="src"
-        preload="metadata"
-        class="item destination-video"
-        v-bind="controlsHidden ? {} : { controls: true }">
-        Your browser does not support the video tag.
-      </video>
-      <div :class="{ 'text-wrapper': true, hidden: overlayHidden }">
-        <h4 v-if="!isMobile">Click to Play Showreel</h4>
-        <h4 v-if="isMobile">Tap to Play Showreel</h4>
-      </div>
-    </template>
-  </div>
+  <section class="image-layover">
+    <LayoutGridContainer>
+      <div
+        class="background-image no-transition"
+        :class="customClass"
+        :style="{ backgroundImage: `url(${imageUrl})` }"
+        ref="backgroundImageRef"></div>
+    </LayoutGridContainer>
+  </section>
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from "vue";
+import { ref, onMounted, onBeforeUnmount } from "vue";
+import { useNuxtApp } from "#app";
 
 const props = defineProps({
-  src: {
+  imageUrl: {
     type: String,
     required: true,
   },
-  alt: {
+  customClass: {
     type: String,
-    default: "Media",
-  },
-  poster: {
-    type: String,
-    default: "",
+    default: '',
   },
 });
 
-const { windowWidth, isMobile } = useWindowWidth();
-const videoRef = ref(null);
-const overlayHidden = ref(false);
-const controlsHidden = ref(true);
-const videoClicked = () => {
-  overlayHidden.value = true;
-  controlsHidden.value = false;
-};
+const backgroundImageRef = ref(null);
+
+const { $gsap } = useNuxtApp();
 
 onMounted(() => {
-  if (videoRef.value) {
-    videoRef.value.addEventListener("click", () => {
-      videoRef.value.play();
+  // Parallax effect for the background image
+  if (backgroundImageRef.value) {
+    $gsap.to(backgroundImageRef.value, {
+      yPercent: 20,
+      ease: "none",
+      scrollTrigger: {
+        trigger: backgroundImageRef.value,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+      },
     });
   }
 });
 
-// List of image and video extensions
-const imageExtensions = ["png", "jpeg", "jpg", "webp"];
-const videoExtensions = ["mp4", "webm"];
-
-// Function to determine if the src is an image
-const isImage = computed(() => {
-  const extension = props.src.split(".").pop().toLowerCase();
-  return imageExtensions.includes(extension);
+onBeforeUnmount(() => {
+  // Clean up GSAP animations
+  $gsap.killTweensOf(backgroundImageRef.value);
+  $gsap.globalTimeline.clear();
 });
 </script>
 
+
 <style scoped>
-.image-strip.container {
-  max-width: 100%;
-  height: 55vw;
-  padding-left: 0;
-  padding-right: 0;
+.image-layover {
+  position: relative;
   overflow: hidden;
+  height: 50vw;
 }
 
-.image-strip img,
-.image-strip video {
-  width: 100%;
+.container {
   height: 100%;
-  object-fit: cover;
 }
 
-.image-strip video:hover {
-  cursor: pointer;
-}
-
-.text-wrapper {
+.background-image {
   position: absolute;
-  width: 100%;
-  z-index: 100;
-  bottom: 15vh;
+  bottom: 0;
   left: 0;
-  text-align: left;
-  margin-left: var(--spacing-3);
-  pointer-events: none;
-}
-
-.text-wrapper h4 {
-  color: var(--background-primary);
-}
-
-.text-wrapper.hidden {
-  opacity: 0;
+  width: 100%;
+  height: 120%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  will-change: transform;
 }
 
 @media (max-width: 767px) {
-  .image-strip.container {
-    height: 177.78vw;
+  .image-1,
+  .image-2 {
+    grid-column: 1 / 7;
   }
 
-  .text-wrapper {
-    bottom: 3vh;
+  .image-layover {
+    height: 100vw;
   }
 }
 </style>

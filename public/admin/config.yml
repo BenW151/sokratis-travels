@@ -48,7 +48,8 @@ collections:
           label: "Region",
           name: "region",
           widget: "select",
-          options: ["europe", "asia", "north-america", "oceania", "resources", "none"],
+          options:
+            ["europe", "asia", "north-america", "oceania", "resources", "none"],
           required: false,
           multiple: false,
         }
@@ -74,106 +75,34 @@ collections:
           name: "headerImageAlt",
           widget: "string",
         }
-      - {
-          label: "Section One Title",
-          name: "sectionOneTitle",
-          widget: "string",
-          required: true,
-        }
-      - {
-          label: "Section One Text",
-          name: "sectionOneText",
-          widget: "text",
-          required: true,
-        }
-      - {
-          label: "Section One Image URL",
-          name: "sectionOneImageUrl",
-          widget: "image",
-          required: true,
-        }
-      - {
-          label: "Section One Image Alt Text",
-          name: "sectionOneImageAlt",
-          widget: "string",
-          required: true,
-        }
-
-      - {
-          label: "Section Two Title",
-          name: "sectionTwoTitle",
-          widget: "string",
-          required: true,
-        }
-      - {
-          label: "Section Two Text",
-          name: "sectionTwoText",
-          widget: "text",
-          required: true,
-        }
-      - {
-          label: "Section Two Image URL",
-          name: "sectionTwoImageUrl",
-          widget: "image",
-          required: true,
-        }
-      - {
-          label: "Section Two Image Alt Text",
-          name: "sectionTwoImageAlt",
-          widget: "string",
-          required: true,
-        }
-
-      - {
-          label: "Section Three Title",
-          name: "sectionThreeTitle",
-          widget: "string",
-          required: true,
-        }
-      - {
-          label: "Section Three Text",
-          name: "sectionThreeText",
-          widget: "text",
-          required: true,
-        }
-      - {
-          label: "Section Three Image URL",
-          name: "sectionThreeImageUrl",
-          widget: "image",
-          required: true,
-        }
-      - {
-          label: "Section Three Image Alt Text",
-          name: "sectionThreeImageAlt",
-          widget: "string",
-          required: true,
-        }
-
-      - {
-          label: "Section Four Title",
-          name: "sectionFourTitle",
-          widget: "string",
-          required: true,
-        }
-      - {
-          label: "Section Four Text",
-          name: "sectionFourText",
-          widget: "text",
-          required: true,
-        }
-      - {
-          label: "Section Four Image URL",
-          name: "sectionFourImageUrl",
-          widget: "image",
-          required: true,
-        }
-      - {
-          label: "Section Four Image Alt Text",
-          name: "sectionFourImageAlt",
-          widget: "string",
-          required: true,
-        }
+      - label: "Content Blocks"
+        name: "content_blocks"
+        widget: "list"
+        types:
+          - label: "Text with Image"
+            name: "text_with_image"
+            widget: "object"
+            fields:
+              - {
+                  label: "Section Title",
+                  name: "section_title",
+                  widget: "string",
+                }
+              - { label: "Section Text", name: "section_text", widget: "text" }
+              - { label: "Image URL", name: "image_url", widget: "image" }
+              - { label: "Image Alt Text", name: "image_alt", widget: "string" }
+          - label: "Background Image"
+            name: "background_image"
+            widget: "object"
+            fields:
+              - { label: "Image URL", name: "image_url", widget: "image" }
+              - {
+                  label: "Custom Class",
+                  name: "custom_class",
+                  widget: "string",
+                }
       - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "destination"
     label: "Destinations"
     folder: "content/destinations"
