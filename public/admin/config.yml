@@ -85,22 +85,28 @@ collections:
             fields:
               - {
                   label: "Section Title",
-                  name: "section_title",
+                  name: "sectionTitle",
                   widget: "string",
                 }
-              - { label: "Section Text", name: "section_text", widget: "text" }
-              - { label: "Image URL", name: "image_url", widget: "image" }
-              - { label: "Image Alt Text", name: "image_alt", widget: "string" }
-          - label: "Background Image"
-            name: "background_image"
+              - { label: "Section Text", name: "sectionText", widget: "text" }
+              - { label: "Image URL", name: "imageUrl", widget: "image" }
+              - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+          - label: "Image Strip"
+            name: "image_strip"
             widget: "object"
             fields:
-              - { label: "Image URL", name: "image_url", widget: "image" }
+              - { label: "Image URL", name: "imageUrl", widget: "image" }
               - {
                   label: "Custom Class",
-                  name: "custom_class",
+                  name: "customClass",
                   widget: "string",
                 }
+          - label: "Text"
+            name: "text"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "sectionTitle", widget: "string" }
+              - { label: "Section Text", name: "sectionText", widget: "text" }
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "destination"
