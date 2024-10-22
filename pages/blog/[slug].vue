@@ -55,6 +55,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import ContentBlockTextWithImage from '~/components/ContentBlocks/TextWithImage.vue'; // Import your component
+import ContentBlockText from '~/components/ContentBlocks/Text.vue'; // Import your component
 import ContentBlockImageStrip from '~/components/ContentBlocks/ImageStrip.vue'; // Import your component
 
 const contentLoaded = ref(false);
@@ -70,6 +71,8 @@ const getComponent = (type) => {
   switch (type) {
     case 'text_with_image':
       return ContentBlockTextWithImage;
+    case 'text':
+      return ContentBlockText;
     case 'image_strip':
       return ContentBlockImageStrip;
     default:
