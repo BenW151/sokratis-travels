@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
+import { ref, onMounted, onBeforeUnmount, watch, nextTick } from "vue";
 import { useNuxtApp } from "#app";
 
 const props = defineProps({
@@ -21,7 +21,7 @@ const props = defineProps({
   },
   altText: {
     type: String,
-    default: '',
+    default: "",
   },
 });
 
@@ -29,8 +29,10 @@ const backgroundImageRef = ref(null);
 
 const { $gsap } = useNuxtApp();
 
-onMounted(() => {
-  // Parallax effect for the background image
+let gsapInitialized = false;
+
+const initGsap = () => {
+  if (gsapInitialized) return;
   if (backgroundImageRef.value) {
     $gsap.to(backgroundImageRef.value, {
       yPercent: 20,
@@ -42,6 +44,24 @@ onMounted(() => {
         scrub: true,
       },
     });
+    gsapInitialized = true;
+  }
+};
+
+onMounted(async () => {
+  await nextTick();
+  if (backgroundImageRef.value && props.imageUrl) {
+    initGsap();
+  } else {
+    const stopWatch = watch(
+      () => [backgroundImageRef.value, props.imageUrl],
+      ([newRef, newImageUrl]) => {
+        if (newRef && newImageUrl) {
+          initGsap();
+          stopWatch(); // Stop watching after initialization
+        }
+      }
+    );
   }
 });
 
@@ -51,7 +71,6 @@ onBeforeUnmount(() => {
   $gsap.globalTimeline.clear();
 });
 </script>
-
 
 <style scoped>
 .image-layover {
