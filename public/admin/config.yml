@@ -9,23 +9,6 @@ backend:
 media_folder: public/images/uploads
 public_folder: /images/uploads
 
-publish_mode: editorial_workflow
-
-workflow:
-  stages:
-    - name: "Draft"
-      status: "draft"
-      description: "Content in development"
-      # Merge draft content into 'staging' branch
-      merge_to_branch: "staging"
-    - name: "Ready to Deploy"
-      status: "ready_to_deploy"
-      description: "Content ready for deployment"
-      # Merge ready content into 'main' branch
-      merge_to_branch: "main"
-  initial_status: "draft"
-  publish: "ready_to_deploy" # Only entries with this status are published
-
 collections:
   - name: "blog"
     label: "Blog"
@@ -36,7 +19,6 @@ collections:
     editor:
       preview: true # Enable preview
     fields:
-      - { label: "Status", name: "status", widget: "hidden", default: "draft" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -114,7 +96,6 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Status", name: "status", widget: "hidden", default: "draft" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
