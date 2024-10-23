@@ -1,7 +1,7 @@
 <template>
   <section>
-    <LayoutGridContainer class="text-block">
-      <TextSectionLabel :labelText="sectionTitle" />
+    <LayoutGridContainer class="text-block content-block">
+      <TextSectionLabel :labelText="sectionLabel" />
       <LayoutColumn>
         <template #title
           ><h3>{{ sectionTitle }}</h3></template
@@ -19,6 +19,7 @@ import { computed, ref } from "vue";
 
 const props = defineProps({
   sectionTitle: String,
+  sectionLabel: String,
   sectionText: String,
 });
 

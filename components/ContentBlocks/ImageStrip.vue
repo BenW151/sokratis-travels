@@ -1,5 +1,5 @@
 <template>
-  <section class="image-layover">
+  <section class="image-layover content-block">
     <LayoutGridContainer>
       <div
         class="background-image no-transition"

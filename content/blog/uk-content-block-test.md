@@ -12,6 +12,7 @@ headerImageLocation: Content Block Test
 content_blocks:
   - type: text
     sectionTitle: Text
+    sectionLabel: Lorem Ipsum
     sectionText: |
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -31,14 +32,13 @@ content_blocks:
 
   - type: text_with_image
     sectionTitle: Text With Image
+    sectionLabel: Lorem Ipsum
     sectionText: |
-      Traveling the world opens up new perspectives and experiences.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      ### Why Travel?
-
-      - **Explore new cultures**
-      - **Meet new people**
-      - **Gain fresh insights**
+      - Explore new cultures
+      - Meet new people
+      - Gain fresh insights
 
       [Learn more about our adventures](/destinations 'Destinations Page').
 

@@ -1,7 +1,7 @@
 <template>
-  <section v-if="mdInitialized" class="text-left">
+  <section v-if="mdInitialized" class="text-left content-block">
     <LayoutGridContainer>
-      <TextSectionLabel :labelText="sectionTitle" />
+      <TextSectionLabel :labelText="sectionLabel" />
       <LayoutColumn>
         <template #title>
           <h3>{{ sectionTitle }}</h3>
@@ -25,6 +25,7 @@ import { computed, ref } from "vue";
 
 const props = defineProps({
   sectionTitle: String,
+  sectionLabel: String,
   sectionText: String,
   imageUrl: String,
   imageAlt: String,

@@ -94,6 +94,11 @@ collections:
                   widget: "string",
                 }
               - {
+                  label: "Section Label",
+                  name: "sectionLabel",
+                  widget: "string",
+                }
+              - {
                   label: "Section Text",
                   name: "sectionText",
                   widget: "markdown",
@@ -113,6 +118,11 @@ collections:
               - {
                   label: "Section Title",
                   name: "sectionTitle",
+                  widget: "string",
+                }
+              - {
+                  label: "Section Label",
+                  name: "sectionLabel",
                   widget: "string",
                 }
               - {
