@@ -1,6 +1,6 @@
 ---
 status: draft
-title: test workflow
+title: test workflow update
 subtitle: test workflow
 description: test workflow
 date: 2024-10-23T14:28:00.000Z
