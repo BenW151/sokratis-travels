@@ -1,8 +1,10 @@
 name: Auto Approve PRs
 
 on:
-  pull_request_target:  # Listens for pull requests, gives elevated permissions.
-    types: [opened, reopened, synchronize]  # Ensure we cover multiple PR events.
+  pull_request:
+    branches: ["**"]  # This will trigger on PRs to any branch.
+  pull_request_target:
+    types: [opened, reopened, synchronize]  # For events targeting elevated permissions.
   workflow_dispatch:  # Allows manual triggering.
 
 jobs:
