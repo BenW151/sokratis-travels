@@ -2,6 +2,8 @@ name: Auto Merge CMS PRs
 
 on:
   pull_request:
+    branches:
+      - staging # Only run on PRs targeting the staging branch
     types: [opened, synchronize]
 
 jobs:
@@ -12,15 +14,11 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v3
 
-      - name: Set up Git
+      - name: Auto-merge CMS pull requests
+        if: startsWith(github.head_ref, 'cms/')
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
-      - name: Auto-merge CMS pull requests
-        if: startsWith(github.head_ref, 'cms/') && github.event.pull_request.base.ref == 'staging'
-        run: |
-          git fetch origin pull/${{ github.event.number }}/head:pr_branch
-          git checkout pr_branch
-          git merge origin/staging --no-ff --no-edit
-          git push origin pr_branch
+          git checkout staging
+          git merge --no-ff ${{ github.head_ref }} -m "Auto-merged PR #${{ github.event.number }}"
+          git push origin staging
