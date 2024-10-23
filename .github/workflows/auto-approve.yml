@@ -1,10 +1,15 @@
-name: Auto approve
-on: pull_request_target
+name: Auto Approve PRs
+
+on:
+  pull_request_target:  # This ensures the action runs for pull requests targeting your repo
 
 jobs:
-  build:
+  auto_approve:
     runs-on: ubuntu-latest
     permissions:
-      pull-requests: write
+      pull-requests: write  # This is necessary for approving the pull requests
     steps:
-      - uses: hmarr/auto-approve-action@v4
+      - name: Auto-Approve PR
+        uses: hmarr/auto-approve-action@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}  # Uses the GitHub token to authenticate
