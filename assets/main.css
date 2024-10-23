@@ -214,6 +214,16 @@ button:hover::after {
   transform-origin: bottom left;
 }
 
+.content-block a::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.content-block a:hover::after {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
 .underline-out::after {
   transform: scaleX(1);
   transform-origin: bottom left;
