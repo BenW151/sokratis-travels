@@ -86,6 +86,8 @@ collections:
                   name: "sectionText",
                   widget: "markdown",
                 }
+      - { label: "Body", name: "body", widget: "markdown" }
+
 
   - name: "destination"
     label: "Destinations"
@@ -121,3 +123,4 @@ collections:
       - { label: "Spending", name: "spending", widget: "string" }
       - { label: "Getting Around", name: "gettingAround", widget: "string" }
       - { label: "Things To Do", name: "thingsToDo", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
