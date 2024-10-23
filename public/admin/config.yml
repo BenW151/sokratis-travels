@@ -2,12 +2,22 @@ site_url: https://sokratistravels.com
 search: false
 backend:
   name: github
-  branch: main
+  branch: staging # Staging is the default branch for drafts
   repo: benw151/sokratis-travels
   base_url: https://oauth.sokratistravels.com
 
 media_folder: public/images/uploads
 public_folder: /images/uploads
+
+publish_mode: editorial_workflow # Enable editorial workflow for content review
+
+workflow:
+  branches:
+    - name: "staging"
+      label: "Draft"
+      default: true # Default branch for drafts and review
+    - name: "main"
+      label: "Ready to Deploy" # Only push to main when content is ready
 
 collections:
   - name: "blog"
@@ -19,6 +29,12 @@ collections:
     editor:
       preview: false
     fields:
+      - {
+          label: "Status",
+          name: "status",
+          widget: "select",
+          options: ["draft", "ready to deploy"],
+        }
       - {
           label: "Title",
           name: "title",
@@ -131,6 +147,12 @@ collections:
     editor:
       preview: false
     fields:
+      - {
+          label: "Status",
+          name: "status",
+          widget: "select",
+          options: ["draft", "ready to deploy"],
+        }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
