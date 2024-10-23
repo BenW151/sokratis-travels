@@ -35,7 +35,7 @@ useHead({
   link: [
     {
       rel: "canonical",
-      href: "https://whynotadventures.co.uk/unsubscribe",
+      href: "https://sokratistravels.com/unsubscribe",
     },
   ],
 });

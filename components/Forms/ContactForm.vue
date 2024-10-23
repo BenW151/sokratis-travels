@@ -17,7 +17,7 @@
           title="Social Media"
           :links="[
             {
-              url: 'https://www.instagram.com/benward.io/',
+              url: 'https://www.instagram.com/sokratistravels.com/',
               label: 'Instagram',
               description: 'Instagram',
             },

@@ -39,7 +39,30 @@ useHead({
   link: [
     {
       rel: "canonical",
-      href: "https://benward.io/",
+      href: "https://sokratistravels.com/destinations",
+    },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://sokratistravels.com/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Destinations",
+            item: "https://sokratistravels.com/destinations",
+          },
+        ],
+      }),
     },
   ],
 });

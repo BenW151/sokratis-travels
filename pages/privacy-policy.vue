@@ -144,10 +144,10 @@
               Privacy Policy. If you have any questions or concerns regarding
               our Privacy Policy, please contact us at
               <a
-                href="mailto:contact@whynotadventures.co.uk"
+                href="mailto:contact@sokratistravels.com"
                 aria-label="email address"
                 class="underline-out"
-                >contact@whynotadventures.co.uk</a
+                >contact@sokratistravels.com</a
               >.
             </p>
           </template>
@@ -170,7 +170,30 @@ useHead({
   link: [
     {
       rel: "canonical",
-      href: "https://whynotadventures.co.uk/privacy-policy",
+      href: "https://sokratistravels.com/privacy-policy",
+    },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://sokratistravels.com/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Privacy Policy",
+            item: "https://sokratistravels.com/privact-policy",
+          },
+        ],
+      }),
     },
   ],
 });

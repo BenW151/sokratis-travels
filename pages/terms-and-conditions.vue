@@ -83,7 +83,7 @@
 
             <p>
               You can contact us by writing to us at
-              contact@whynotadventures.co.uk.
+              contact@sokratistravels.com.
             </p>
 
             <p>
@@ -482,7 +482,7 @@
                 },
                 {
                   id: 2,
-                  text: 'In the event that the complaint remains unresolved with the Tour Leader, set out your complaint in writing and send it to us by email at contact@whynotadventures.co.uk within 7 days of completion of the Tour.',
+                  text: 'In the event that the complaint remains unresolved with the Tour Leader, set out your complaint in writing and send it to us by email at contact@sokratistravels.com within 7 days of completion of the Tour.',
                 },
               ]" />
 
@@ -527,10 +527,10 @@
               have read, understood, and agree to these terms and conditions. If
               you have any questions or concerns, please contact us at
               <a
-                href="mailto:contact@whynotadventures.co.uk"
+                href="mailto:contact@sokratistravels.com"
                 aria-label="email address"
                 class="underline-out"
-                >contact@whynotadventures.co.uk</a
+                >contact@sokratistravels.com</a
               >.
             </p>
           </template>
@@ -553,7 +553,30 @@ useHead({
   link: [
     {
       rel: "canonical",
-      href: "https://whynotadventures.co.uk/terms-and-conditions",
+      href: "https://sokratistravels.com/terms-and-conditions",
+    },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://sokratistravels.com/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Terms and Conditions",
+            item: "https://sokratistravels.com/terms-and-conditions",
+          },
+        ],
+      }),
     },
   ],
 });

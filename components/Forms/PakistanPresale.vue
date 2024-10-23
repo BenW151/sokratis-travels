@@ -40,7 +40,7 @@ const submitForm = async () => {
   message.value = "Submitting...";
 
   try {
-    const response = await fetch("https://newsletter.whynotadventures.co.uk/", {
+    const response = await fetch("https://newsletter.sokratistravels.com/", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",

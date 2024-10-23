@@ -158,7 +158,7 @@ useHead({
   link: [
     {
       rel: "canonical",
-      href: "https://benward.io/",
+      href: "https://sokratistravels.com/",
     },
   ],
 });

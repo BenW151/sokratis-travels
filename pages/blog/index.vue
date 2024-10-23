@@ -25,7 +25,30 @@ useHead({
   link: [
     {
       rel: "canonical",
-      href: "https://benward.io/",
+      href: "https://sokratistravels.com/",
+    },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://sokratistravels.com/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Blog",
+            item: "https://sokratistravels.com/blog",
+          },
+        ],
+      }),
     },
   ],
 });

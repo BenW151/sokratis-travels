@@ -54,6 +54,52 @@
 </template>
 
 <script setup>
+useHead({
+  title: "Sokratis Travels | TODO",
+  meta: [
+    {
+      name: "description",
+      content:
+        "[DESCRIPTION]",
+    },
+  ],
+  link: [
+    {
+      rel: "canonical",
+      href: "https://sokratistravels.com/blog/TODO",
+    },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://sokratistravels.com/",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Blog",
+            item: "https://sokratistravels.com/blog",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Blog",
+            item: "https://sokratistravels.com/blog/TODO",
+          },
+        ],
+      }),
+    },
+  ],
+});
+
 import { ref, onMounted } from "vue";
 import ContentBlockTextWithImage from '~/components/ContentBlocks/TextWithImage.vue'; // Import your component
 import ContentBlockText from '~/components/ContentBlocks/Text.vue'; // Import your component

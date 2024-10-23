@@ -56,7 +56,7 @@
         </LayoutGridContainer>
       </section>
 
-      <BlogRegions labelText="Destinations"/>
+      <BlogRegions labelText="Destinations" />
 
       <section class="profile text-right">
         <LayoutGridContainer>
@@ -106,7 +106,24 @@ useHead({
   link: [
     {
       rel: "canonical",
-      href: "https://whynotadventures.co.uk",
+      href: "https://sokratistravels.com",
+    },
+  ],
+  script: [
+    {
+      type: "application/ld+json",
+      innerHTML: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://sokratistravels.com/",
+          },
+        ],
+      }),
     },
   ],
 });

@@ -2,7 +2,7 @@
 import { resolve } from "path";
 export default defineNuxtConfig({
   site: {
-    url: "https://whynotadventures.co.uk/",
+    url: "https://sokratistravels.com/",
     name: "Sokratis Travels",
   },
 
@@ -105,9 +105,9 @@ export default defineNuxtConfig({
         },
         {
           property: "og:image",
-          content: "https://whynotadventures.co.uk/cover.png",
+          content: "https://sokratistravels.com/cover.png",
         },
-        { property: "og:url", content: "https://whynotadventures.co.uk/" },
+        { property: "og:url", content: "https://sokratistravels.com/" },
         { name: "twitter:card", content: "summary_large_image" },
         {
           property: "og:site_name",
@@ -125,8 +125,8 @@ export default defineNuxtConfig({
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "Sokratis Travels",
-            url: "https://whynotadventures.co.uk",
-            logo: "https://whynotadventures.co.uk/branding/why-not-adventures-logo-rectangle.png",
+            url: "https://sokratistravels.com",
+            logo: "https://sokratistravels.com/branding/why-not-adventures-logo-rectangle.png",
             sameAs: [
               "https://www.facebook.com/whynotadventures_",
               "https://www.instagram.com/whynotadventures_",
@@ -134,34 +134,6 @@ export default defineNuxtConfig({
             ],
             description:
               "Sokratis Travels offers affordable tours to off the beaten track destinations, delivering expertly crafted itineraries and authentic adventures.",
-          },
-        },
-        {
-          type: "application/ld+json",
-          json: {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            itemListElement: [
-              {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://whynotadventures.co.uk/",
-              },
-              {
-                "@type": "ListItem",
-                position: 2,
-                name: "Destinations",
-                item: "https://whynotadventures.co.uk/destinations",
-              },
-              {
-                "@type": "ListItem",
-                position: 3,
-                name: "Contact",
-                item: "https://whynotadventures.co.uk/contact",
-              },
-              // Add more breadcrumbs as needed
-            ],
           },
         },
       ],
