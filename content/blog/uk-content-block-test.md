@@ -12,7 +12,7 @@ headerImageLocation: Content Block Test
 content_blocks:
   - type: text
     sectionTitle: Text
-    sectionText: >-
+    sectionText: |
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -26,19 +26,27 @@ content_blocks:
 
 
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+      [Learn more about our adventures](/destinations 'Destinations Page').
+
   - type: text_with_image
     sectionTitle: Text With Image
-    sectionText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-      ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-      est laborum.
+    sectionText: |
+      Traveling the world opens up new perspectives and experiences.
+
+      ### Why Travel?
+
+      - **Explore new cultures**
+      - **Meet new people**
+      - **Gain fresh insights**
+
+      [Learn more about our adventures](/destinations 'Destinations Page').
+
     imageUrl: /images/uploads/index-background.webp
     imageAlt: alt text
   - type: image_strip
     imageUrl: /images/uploads/index-background.webp
     altText: Alt Text
 ---
+
 .
