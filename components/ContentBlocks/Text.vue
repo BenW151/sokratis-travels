@@ -3,9 +3,6 @@
     <LayoutGridContainer class="text-block content-block">
       <TextSectionLabel :labelText="sectionLabel" />
       <LayoutColumn>
-        <template #title
-          ><h3>{{ sectionTitle }}</h3></template
-        >
         <template #body>
           <div v-html="renderedMarkdown"></div>
         </template>
@@ -18,7 +15,6 @@
 import { computed, ref } from "vue";
 
 const props = defineProps({
-  sectionTitle: String,
   sectionLabel: String,
   sectionText: String,
 });

@@ -89,11 +89,6 @@ collections:
             widget: "object"
             fields:
               - {
-                  label: "Section Title",
-                  name: "sectionTitle",
-                  widget: "string",
-                }
-              - {
                   label: "Section Label",
                   name: "sectionLabel",
                   widget: "string",
@@ -115,11 +110,6 @@ collections:
             name: "text"
             widget: "object"
             fields:
-              - {
-                  label: "Section Title",
-                  name: "sectionTitle",
-                  widget: "string",
-                }
               - {
                   label: "Section Label",
                   name: "sectionLabel",
