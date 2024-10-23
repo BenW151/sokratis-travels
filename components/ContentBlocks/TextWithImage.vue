@@ -73,4 +73,19 @@ const renderedMarkdown = computed(() => {
   grid-row-start: 2;
   height: 40vw;
 }
+
+@media (max-width: 767px) {
+  .text-left .column,
+  .text-left .image,
+  .text-right .column,
+  .text-right .image {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .text-left .image,
+  .text-right .image {
+    height: 60vw;
+  }
+}
 </style>
