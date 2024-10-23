@@ -2,22 +2,29 @@ site_url: https://sokratistravels.com
 search: false
 backend:
   name: github
-  branch: staging # Staging is the default branch for drafts
+  branch: staging # Set staging as the default branch
   repo: benw151/sokratis-travels
   base_url: https://oauth.sokratistravels.com
 
 media_folder: public/images/uploads
 public_folder: /images/uploads
 
-publish_mode: editorial_workflow # Enable editorial workflow for content review
+publish_mode: editorial_workflow
 
 workflow:
-  branches:
-    - name: "staging"
-      label: "Draft"
-      default: true # Default branch for drafts and review
-    - name: "main"
-      label: "Ready to Deploy" # Only push to main when content is ready
+  stages:
+    - name: "Draft"
+      status: "draft"
+      description: "Content in development"
+      # Merge draft content into 'staging' branch
+      merge_to_branch: "staging"
+    - name: "Ready to Deploy"
+      status: "ready_to_deploy"
+      description: "Content ready for deployment"
+      # Merge ready content into 'main' branch
+      merge_to_branch: "main"
+  initial_status: "draft"
+  publish: "ready_to_deploy" # Only entries with this status are published
 
 collections:
   - name: "blog"
@@ -27,27 +34,12 @@ collections:
     create: true
     slug: "{{country}}-{{slug}}"
     editor:
-      preview: false
+      preview: true # Enable preview
     fields:
-      - {
-          label: "Status",
-          name: "status",
-          widget: "select",
-          options: ["draft", "ready to deploy"],
-        }
-      - {
-          label: "Title",
-          name: "title",
-          widget: "string",
-          hint: "This will also be used for SEO page meta.",
-        }
+      - { label: "Status", name: "status", widget: "hidden", default: "draft" }
+      - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
-      - {
-          label: "Description",
-          name: "description",
-          widget: "string",
-          hint: "This will also be used for SEO page meta.",
-        }
+      - { label: "Description", name: "description", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - {
           label: "Country",
@@ -57,8 +49,6 @@ collections:
           search_fields: ["title"],
           value_field: "title",
           display_fields: ["title"],
-          required: false,
-          multiple: false,
         }
       - {
           label: "Region",
@@ -66,34 +56,12 @@ collections:
           widget: "select",
           options:
             ["europe", "asia", "north-america", "oceania", "resources", "none"],
-          required: false,
-          multiple: false,
         }
-      - {
-          label: "Tag",
-          name: "tag",
-          widget: "string",
-          hint: "Must exactly match related pages. Use all lower case and put dashes between words (Like this: tag-example)",
-          pattern:
-            [
-              "^[a-z]+(-[a-z]+)*$",
-              "Use all lower case and put dashes between words (Like this: tag-example)",
-            ],
-        }
-      - {
-          label: "Header Image URL",
-          name: "headerImageUrl",
-          widget: "image",
-          allow_multiple: false,
-        }
+      - { label: "Tag", name: "tag", widget: "string" }
+      - { label: "Header Image URL", name: "headerImageUrl", widget: "image" }
       - {
           label: "Header Image Alt Text",
           name: "headerImageAlt",
-          widget: "string",
-        }
-      - {
-          label: "Header Image Location",
-          name: "headerImageLocation",
           widget: "string",
         }
       - label: "Content Blocks"
@@ -136,7 +104,6 @@ collections:
                   name: "sectionText",
                   widget: "markdown",
                 }
-      - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "destination"
     label: "Destinations"
@@ -147,12 +114,7 @@ collections:
     editor:
       preview: false
     fields:
-      - {
-          label: "Status",
-          name: "status",
-          widget: "select",
-          options: ["draft", "ready to deploy"],
-        }
+      - { label: "Status", name: "status", widget: "hidden", default: "draft" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Subtitle", name: "subtitle", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
@@ -163,12 +125,7 @@ collections:
           widget: "string",
           pattern: ["^[a-z]+$", "Must be lower case"],
         }
-      - {
-          label: "Header Image URL",
-          name: "headerImageUrl",
-          widget: "image",
-          allow_multiple: false,
-        }
+      - { label: "Header Image URL", name: "headerImageUrl", widget: "image" }
       - {
           label: "Header Image Alt Text",
           name: "headerImageAlt",
@@ -181,60 +138,5 @@ collections:
           hint: "Use international currency code, EUR, GBP, USD, etc.",
         }
       - { label: "Spending", name: "spending", widget: "string" }
-      - {
-          label: "spending Image URL",
-          name: "spendingImageUrl",
-          widget: "image",
-          allow_multiple: false,
-        }
-      - {
-          label: "spending Image Alt Text",
-          name: "spendingImageAlt",
-          widget: "string",
-        }
       - { label: "Getting Around", name: "gettingAround", widget: "string" }
-      - {
-          label: "gettingAround Image URL",
-          name: "gettingAroundImageUrl",
-          widget: "image",
-          allow_multiple: false,
-        }
-      - {
-          label: "gettingAround Image Alt Text",
-          name: "gettingAroundImageAlt",
-          widget: "string",
-        }
       - { label: "Things To Do", name: "thingsToDo", widget: "string" }
-      - {
-          label: "thingsToDo Image URL",
-          name: "thingsToDoImageUrl",
-          widget: "image",
-          allow_multiple: false,
-        }
-      - {
-          label: "thingsToDo Image Alt Text",
-          name: "thingsToDoImageAlt",
-          widget: "string",
-        }
-      - { label: "Where To Stay", name: "whereToStay", widget: "string" }
-      - {
-          label: "whereToStay Image URL",
-          name: "whereToStayImageUrl",
-          widget: "image",
-          allow_multiple: false,
-        }
-      - {
-          label: "whereToStay Image Alt Text",
-          name: "whereToStayImageAlt",
-          widget: "string",
-        }
-      - {
-          label: "FAQ Worth Visiting",
-          name: "faqWorthVisiting",
-          widget: "string",
-        }
-      - { label: "FAQ Cheap", name: "faqCheap", widget: "string" }
-      - { label: "FAQ Water", name: "faqWater", widget: "string" }
-      - { label: "FAQ Visa", name: "faqVisa", widget: "string" }
-      - { label: "FAQ Insurance", name: "faqInsurance", widget: "string" }
-      - { label: "FAQ Safety", name: "faqSafety", widget: "string" }
