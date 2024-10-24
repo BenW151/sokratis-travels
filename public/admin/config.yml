@@ -2,12 +2,15 @@ site_url: https://sokratistravels.com
 search: false
 backend:
   name: github
-  branch: staging # Set staging as the default branch
+  branch: main
   repo: benw151/sokratis-travels
   base_url: https://oauth.sokratistravels.com
+  squash_merges: true
 
 media_folder: public/images/uploads
 public_folder: /images/uploads
+
+publish_mode: editorial_workflow
 
 collections:
   - name: "blog"
